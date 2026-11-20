@@ -259,6 +259,750 @@ window.globalRecords = {
           "text": "The sources do not measure turnout attributable to each organisation or establish how participants learned of the event."
         }
       ]
+    },
+    {
+      "id": "ORG-400",
+      "title": "ALBA Movimientos",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-401",
+      "title": "Barrios X Memoria y Justicia de Lomas de Zamora",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-402",
+      "title": "Federación Judicial Argentina",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-403",
+      "title": "Liga Argentina por los Derechos Humanos (LADH)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-404",
+      "title": "Red Argentina de Solidaridad con Palestina",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-405",
+      "title": "Comisión de Solidaridad con Palestina de Avellaneda",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-406",
+      "title": "Comisión de Solidaridad con Palestina de Lomas de Zamora",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-407",
+      "title": "Central de Trabajadores de la Argentina Autónoma (CTA-A)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Argentina.",
+      "kind": "Statement signatory",
+      "country": "Argentina",
+      "countries": [
+        "AR"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-408",
+      "title": "BDS desde el Sur",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Chile.",
+      "kind": "Statement signatory",
+      "country": "Chile",
+      "countries": [
+        "CL"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-409",
+      "title": "Comité Chileno de solidaridad con Palestina",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Chile.",
+      "kind": "Statement signatory",
+      "country": "Chile",
+      "countries": [
+        "CL"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-410",
+      "title": "Juventud Chileno Árabe de Valdivia por Palestina",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Chile.",
+      "kind": "Statement signatory",
+      "country": "Chile",
+      "countries": [
+        "CL"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-411",
+      "title": "BDS Colombia",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Colombia.",
+      "kind": "Statement signatory",
+      "country": "Colombia",
+      "countries": [
+        "CO"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-412",
+      "title": "Copinh (Consejo Cívico de Organizaciones Populares e Indígenas de Honduras)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Honduras.",
+      "kind": "Statement signatory",
+      "country": "Honduras",
+      "countries": [
+        "HN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-413",
+      "title": "All India Muslim Majlis e Mushawarat",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-414",
+      "title": "Al-Quds Foundation, India",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-415",
+      "title": "Bhagat Singh Ambedkar Student Organization (BASO)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-416",
+      "title": "India Palestine Friendship Forum",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-417",
+      "title": "Indian Writers Forum",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-418",
+      "title": "Palestine Solidarity Committee in India",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-419",
+      "title": "Palestine Solidarity Movement",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-420",
+      "title": "Solidarity Youth Movement",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under India.",
+      "kind": "Statement signatory",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-421",
+      "title": "Friends of Palestine",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Maldives.",
+      "kind": "Statement signatory",
+      "country": "Maldives",
+      "countries": [
+        "MV"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-422",
+      "title": "Global Peace Mission (GPM)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-423",
+      "title": "Movement for Monetary Justice",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-424",
+      "title": "Muslim Care Malaysia",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-425",
+      "title": "Muslim Youth Movement of Malaysia (ABIM)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-426",
+      "title": "MyCARE (Humanitarian Care Malaysia)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-427",
+      "title": "Palestinian Cultural Organization Malaysia (PCOM)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Malaysia.",
+      "kind": "Statement signatory",
+      "country": "Malaysia",
+      "countries": [
+        "MY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-428",
+      "title": "BDS Perú",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Peru.",
+      "kind": "Statement signatory",
+      "country": "Peru",
+      "countries": [
+        "PE"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-429",
+      "title": "Comité Palestina Libre",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Uruguay.",
+      "kind": "Statement signatory",
+      "country": "Uruguay",
+      "countries": [
+        "UY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
+    },
+    {
+      "id": "ORG-430",
+      "title": "Comisión de Apoyo al Pueblo Palestino-Uruguay (Capp-u)",
+      "summary": "The published 2019 statement lists this organisation among its endorsers under Uruguay.",
+      "kind": "Statement signatory",
+      "country": "Uruguay",
+      "countries": [
+        "UY"
+      ],
+      "date": "2019-04-01",
+      "sources": [
+        "EV-203"
+      ],
+      "notes": [
+        {
+          "label": "Documented activity",
+          "text": "The BDS Movement publication lists the organisation as an endorser of its 2019 military-embargo statement."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
+        }
+      ]
     }
   ],
   "connections": [

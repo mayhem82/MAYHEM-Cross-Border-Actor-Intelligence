@@ -80,5 +80,53 @@ window.translations = {
   },
   "ORG-337": {
     "title": "Palestine Emergency Collective"
+  },
+  "ORG-400": {
+    "title": "ALBA Movements"
+  },
+  "ORG-401": {
+    "title": "Neighbourhoods for Memory and Justice of Lomas de Zamora"
+  },
+  "ORG-402": {
+    "title": "Argentine Judicial Federation"
+  },
+  "ORG-403": {
+    "title": "Argentine League for Human Rights"
+  },
+  "ORG-404": {
+    "title": "Argentine Palestine Solidarity Network"
+  },
+  "ORG-405": {
+    "title": "Avellaneda Palestine Solidarity Committee"
+  },
+  "ORG-406": {
+    "title": "Lomas de Zamora Palestine Solidarity Committee"
+  },
+  "ORG-407": {
+    "title": "Autonomous Workers’ Central Union of Argentina"
+  },
+  "ORG-408": {
+    "title": "BDS from the South"
+  },
+  "ORG-409": {
+    "title": "Chilean Palestine Solidarity Committee"
+  },
+  "ORG-410": {
+    "title": "Chilean-Arab Youth of Valdivia for Palestine"
+  },
+  "ORG-412": {
+    "title": "Civic Council of Popular and Indigenous Organisations of Honduras"
+  },
+  "ORG-413": {
+    "title": "All India Muslim Consultative Council"
+  },
+  "ORG-428": {
+    "title": "BDS Peru"
+  },
+  "ORG-429": {
+    "title": "Free Palestine Committee"
+  },
+  "ORG-430": {
+    "title": "Uruguayan Committee for Support of the Palestinian People"
   }
 };
