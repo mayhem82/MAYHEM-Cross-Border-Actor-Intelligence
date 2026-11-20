@@ -144,6 +144,1062 @@ window.civic = {
           "text": "AFPS identifies its European coordination role and appears among the signatories to the 2019 joint letter."
         }
       ]
+    },
+    {
+      "id": "ORG-300",
+      "title": "Society for Austro-Arab Relations – SAAR",
+      "summary": "ECCP lists this organisation under Austria in its published member directory.",
+      "kind": "Listed member",
+      "country": "Austria",
+      "countries": [
+        "AT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-301",
+      "title": "Women in Black (Vienna)",
+      "summary": "ECCP lists this organisation under Austria in its published member directory.",
+      "kind": "Listed member",
+      "country": "Austria",
+      "countries": [
+        "AT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-302",
+      "title": "Association Belgo-Palestinienne (ABP)",
+      "summary": "ECCP lists this organisation under Belgium in its published member directory.",
+      "kind": "Listed member",
+      "country": "Belgium",
+      "countries": [
+        "BE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-303",
+      "title": "Belgian Academics and Artists for Palestine – BAA4P",
+      "summary": "ECCP lists this organisation under Belgium in its published member directory.",
+      "kind": "Listed member",
+      "country": "Belgium",
+      "countries": [
+        "BE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-304",
+      "title": "Palestina Solidariteit",
+      "summary": "ECCP lists this organisation under Belgium in its published member directory.",
+      "kind": "Listed member",
+      "country": "Belgium",
+      "countries": [
+        "BE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-305",
+      "title": "Intal",
+      "summary": "ECCP lists this organisation under Belgium in its published member directory.",
+      "kind": "Listed member",
+      "country": "Belgium",
+      "countries": [
+        "BE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-306",
+      "title": "ISM Czech Republic",
+      "summary": "ECCP lists this organisation under Czech Republic in its published member directory.",
+      "kind": "Listed member",
+      "country": "Czech Republic",
+      "countries": [
+        "CZ"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-307",
+      "title": "Initiative for a Just Peace in the Middle East",
+      "summary": "ECCP lists this organisation under Czech Republic in its published member directory.",
+      "kind": "Listed member",
+      "country": "Czech Republic",
+      "countries": [
+        "CZ"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-308",
+      "title": "Finnish-Arab Friendship Society",
+      "summary": "ECCP lists this organisation under Finland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Finland",
+      "countries": [
+        "FI"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-309",
+      "title": "Sumud – the Finnish Palestine Network",
+      "summary": "ECCP lists this organisation under Finland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Finland",
+      "countries": [
+        "FI"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-310",
+      "title": "AURDIP – Association of Universities for the Respect of International Law in Palestine",
+      "summary": "ECCP lists this organisation under France in its published member directory.",
+      "kind": "Listed member",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-311",
+      "title": "Plateforme des ONG françaises pour la Palestine",
+      "summary": "ECCP lists this organisation under France in its published member directory.",
+      "kind": "Listed member",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-312",
+      "title": "Union Juive Française pour la Paix (UJFP)",
+      "summary": "ECCP lists this organisation under France in its published member directory.",
+      "kind": "Listed member",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-313",
+      "title": "Tsedek",
+      "summary": "ECCP lists this organisation under France in its published member directory.",
+      "kind": "Listed member",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-314",
+      "title": "BDS France",
+      "summary": "ECCP lists this organisation under France in its published member directory.",
+      "kind": "Listed member",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-315",
+      "title": "Deutscher Koordinationskreis Palastina Israel (KOPI)",
+      "summary": "ECCP lists this organisation under Germany in its published member directory.",
+      "kind": "Listed member",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-316",
+      "title": "Buendnis fuer Gerechtigkeit zwischen Israelis und Palaestinensern e.V. BIP",
+      "summary": "ECCP lists this organisation under Germany in its published member directory.",
+      "kind": "Listed member",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-317",
+      "title": "DPG",
+      "summary": "ECCP lists this organisation under Germany in its published member directory.",
+      "kind": "Listed member",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-318",
+      "title": "BDS Berlin",
+      "summary": "ECCP lists this organisation under Germany in its published member directory.",
+      "kind": "Listed member",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-319",
+      "title": "Comhlamh",
+      "summary": "ECCP lists this organisation under Ireland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Ireland",
+      "countries": [
+        "IE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-320",
+      "title": "FIOM-CGIL",
+      "summary": "ECCP lists this organisation under Italy in its published member directory.",
+      "kind": "Listed member",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-321",
+      "title": "AssoPacePalestina",
+      "summary": "ECCP lists this organisation under Italy in its published member directory.",
+      "kind": "Listed member",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-322",
+      "title": "Cultura è liberta",
+      "summary": "ECCP lists this organisation under Italy in its published member directory.",
+      "kind": "Listed member",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-323",
+      "title": "New Weapons Research Group",
+      "summary": "ECCP lists this organisation under Italy in its published member directory.",
+      "kind": "Listed member",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-324",
+      "title": "Par brīvu Palestīnu",
+      "summary": "ECCP lists this organisation under Latvia in its published member directory.",
+      "kind": "Listed member",
+      "country": "Latvia",
+      "countries": [
+        "LV"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-325",
+      "title": "Ebreji Par Mieru Palestina (Jews for Peace)",
+      "summary": "ECCP lists this organisation under Latvia in its published member directory.",
+      "kind": "Listed member",
+      "country": "Latvia",
+      "countries": [
+        "LV"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-326",
+      "title": "Comite Pour Une Paix Juste Au Proche –Orient (CPJPO)",
+      "summary": "ECCP lists this organisation under Luxembourg in its published member directory.",
+      "kind": "Listed member",
+      "country": "Luxembourg",
+      "countries": [
+        "LU"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-327",
+      "title": "Netherlands Palestina Komittee",
+      "summary": "ECCP lists this organisation under Netherlands in its published member directory.",
+      "kind": "Listed member",
+      "country": "Netherlands",
+      "countries": [
+        "NL"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-328",
+      "title": "DocP",
+      "summary": "ECCP lists this organisation under Netherlands in its published member directory.",
+      "kind": "Listed member",
+      "country": "Netherlands",
+      "countries": [
+        "NL"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-329",
+      "title": "Dutch Scholars for Palestine",
+      "summary": "ECCP lists this organisation under Netherlands in its published member directory.",
+      "kind": "Listed member",
+      "country": "Netherlands",
+      "countries": [
+        "NL"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-330",
+      "title": "Fellesutvalget for Palestina – The Association of Norwegian NGOs for Palestine",
+      "summary": "ECCP lists this organisation under Norway in its published member directory.",
+      "kind": "Listed member",
+      "country": "Norway",
+      "countries": [
+        "NO"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-331",
+      "title": "MPPM - Portuguese Movement for the Rights of the Palestinian People and for Peace in the Middle East",
+      "summary": "ECCP lists this organisation under Portugal in its published member directory.",
+      "kind": "Listed member",
+      "country": "Portugal",
+      "countries": [
+        "PT"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-332",
+      "title": "BDS Slovenia",
+      "summary": "ECCP lists this organisation under Slovenia in its published member directory.",
+      "kind": "Listed member",
+      "country": "Slovenia",
+      "countries": [
+        "SI"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-333",
+      "title": "Iniciatíva za spravodlivý mier na Blízkom východe – Slovak Initiative for a Just Peace in the Middle East",
+      "summary": "ECCP lists this organisation under Slovakia in its published member directory.",
+      "kind": "Listed member",
+      "country": "Slovakia",
+      "countries": [
+        "SK"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-334",
+      "title": "RESCOP",
+      "summary": "ECCP lists this organisation under Spain in its published member directory.",
+      "kind": "Listed member",
+      "country": "Spain",
+      "countries": [
+        "ES"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-335",
+      "title": "RuxP",
+      "summary": "ECCP lists this organisation under Spain in its published member directory.",
+      "kind": "Listed member",
+      "country": "Spain",
+      "countries": [
+        "ES"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-336",
+      "title": "The Palestine Solidarity Association of Sweden (PGS)",
+      "summary": "ECCP lists this organisation under Sweden in its published member directory.",
+      "kind": "Listed member",
+      "country": "Sweden",
+      "countries": [
+        "SE"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-337",
+      "title": "Collectif Urgence Palestine",
+      "summary": "ECCP lists this organisation under Switzerland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Switzerland",
+      "countries": [
+        "CH"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-338",
+      "title": "Association Switzerland Palestine (ASP)",
+      "summary": "ECCP lists this organisation under Switzerland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Switzerland",
+      "countries": [
+        "CH"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-339",
+      "title": "BDS Switzerland",
+      "summary": "ECCP lists this organisation under Switzerland in its published member directory.",
+      "kind": "Listed member",
+      "country": "Switzerland",
+      "countries": [
+        "CH"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-340",
+      "title": "British Committee for the Universities of Palestine (BRICUP)",
+      "summary": "ECCP lists this organisation under United Kingdom in its published member directory.",
+      "kind": "Listed member",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-341",
+      "title": "ICAHD UK",
+      "summary": "ECCP lists this organisation under United Kingdom in its published member directory.",
+      "kind": "Listed member",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-342",
+      "title": "Palestine Solidarity Campaign",
+      "summary": "ECCP lists this organisation under United Kingdom in its published member directory.",
+      "kind": "Listed member",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
+    },
+    {
+      "id": "ORG-343",
+      "title": "Law 4 Palestine",
+      "summary": "ECCP lists this organisation under United Kingdom in its published member directory.",
+      "kind": "Listed member",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This entry records ECCP’s published directory listing as captured on 20 November 2026. The source does not give a date when membership began or ended."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The directory is ECCP’s own account. Leadership, activities and independent confirmation require separate sources."
+        }
+      ]
     }
   ],
   "connections": [
