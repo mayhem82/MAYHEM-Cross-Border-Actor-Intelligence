@@ -37,7 +37,13 @@ const navGroups = [['Investigation',['dashboard','network','timeline']],['Regist
 const categoryPages = {actors:'actors',organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
 const data = {}, records = new Map();
 for(const key of Object.keys(categoryPages)){
- data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[])];
+ data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[])].map(entry => {
+  const row = {...entry};
+  for (const [field, translated] of Object.entries(window.translations[entry.id] || {})) {
+   if (row[field]) row[field] += ' [' + translated + ']';
+  }
+  return row;
+ });
  for(const row of data[key]) records.set(row.id,{...row,section:categoryPages[key],category:key});
 }
 const capture = window.preservation || {};

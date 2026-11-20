@@ -5,11 +5,11 @@ import { runInNewContext } from 'node:vm';
 
 const docs = new URL('../docs/', import.meta.url);
 const context = { window: {} };
-for (const name of ['civic', 'cases', 'global', 'preservation']) {
+for (const name of ['civic', 'cases', 'global', 'preservation', 'translations']) {
   const file = new URL('data/' + name + '.js', docs);
   runInNewContext(readFileSync(file, 'utf8'), context, { filename: file.pathname });
 }
-const { civic, cases, globalRecords, preservation } = context.window;
+const { civic, cases, globalRecords, preservation, translations } = context.window;
 const strands = [civic, cases, globalRecords];
 const sources = new Map(strands.flatMap(strand => strand.sources).map(s => [s.id, s]));
 const seen = new Set();
@@ -44,4 +44,14 @@ for (const strand of strands) {
   }
 }
 assert.equal(Object.keys(preservation).length, sources.size, 'Archive manifest and source register differ');
+const allRows = new Map(strands.flatMap(strand => Object.values(strand).flat()).map(row => [row.id, row]));
+for (const [id, fields] of Object.entries(translations)) {
+  const row = allRows.get(id);
+  assert(row, 'Translation references a missing record ' + id);
+  for (const [field, translated] of Object.entries(fields)) {
+    assert(['title', 'publisher', 'quote', 'locator'].includes(field), id + ' has an unsupported translated field');
+    assert(typeof row[field] === 'string' && row[field].trim(), id + ' lacks the original ' + field);
+    assert(typeof translated === 'string' && translated.trim(), id + ' has an empty ' + field + ' translation');
+  }
+}
 console.log('Verified ' + seen.size + ' unique records and ' + sources.size + ' evidence captures.');
