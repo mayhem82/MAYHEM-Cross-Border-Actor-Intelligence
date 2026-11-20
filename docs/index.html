@@ -4,13 +4,15 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#152322">
-  <meta name="description" content="Explore the MAYHEM public evidence register for cross-border protest networks in Europe. Trace findings to court records, official reports and organisations’ own publications.">
+  <meta name="description" content="Explore the worldwide MAYHEM public evidence register for protest movements and cross-border relationships. Trace findings to court records, official reports and organisations’ own publications.">
   <title>Investigation dashboard · MAYHEM</title>
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
-  <script defer src="./assets/geography.js"></script>
+  <script defer src="./assets/world.js"></script>
+  <script defer src="./globe.js"></script>
   <script defer src="./data/civic.js"></script>
   <script defer src="./data/cases.js"></script>
+  <script defer src="./data/global.js"></script>
   <script defer src="./data/preservation.js"></script>
   <script defer src="./app.js"></script>
 </head>
@@ -28,8 +30,8 @@
       <div class="crumb"><span>Investigations</span><i>/</i><strong id="breadcrumb">Dashboard</strong></div>
       <button id="openSearch" class="searchButton" aria-label="Search all records"></button>
     </header>
-    <main id="content" tabindex="-1"><noscript><h1>Cross-border protest networks in Europe</h1><p>Enable JavaScript to browse the interactive registers, or read the <a href="https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence/tree/main/docs/data">published source records</a>.</p></noscript></main>
-    <footer class="pageFoot"><span>MAYHEM Investigations</span><a href="#method">Evidence methodology</a></footer>
+    <main id="content" tabindex="-1"><noscript><h1>Cross-border protest networks worldwide</h1><p>Enable JavaScript to browse the interactive registers, or read the <a href="https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence/tree/main/docs/data">published source records</a>.</p></noscript></main>
+    <footer class="pageFoot"><a href="https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence/tree/v1.0.0">Worldwide edition · v1.0.0</a><a href="#method">Evidence methodology</a></footer>
   </div>
   <dialog id="lookup" aria-labelledby="lookupTitle"><div class="dialogHead"><h2 id="lookupTitle">Search the investigation</h2><button class="iconButton" data-close aria-label="Close search">×</button></div><label for="query" class="visuallyHidden">Search records</label><input type="search" id="query" placeholder="Search by title, country, keyword or ID" autocomplete="off"><div id="results" aria-live="polite"></div></dialog>
 </body>

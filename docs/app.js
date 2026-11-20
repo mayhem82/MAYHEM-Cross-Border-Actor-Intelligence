@@ -37,45 +37,40 @@ const navGroups = [['Investigation',['dashboard','network','timeline']],['Regist
 const categoryPages = {organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
 const data = {}, records = new Map();
 for(const key of Object.keys(categoryPages)){
- data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[])];
+ data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[])];
  for(const row of data[key]) records.set(row.id,{...row,section:categoryPages[key],category:key});
 }
 const capture = window.preservation || {};
 const revision = '20 November 2026';
 const sourceUrl = 'https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence';
-const fmtDate = (s,short=false) => !s ? 'Undated' : s.length===4 ? s : new Intl.DateTimeFormat('en-GB',{day:'numeric',month:short?'short':'long',year:'numeric',timeZone:'UTC'}).format(new Date(s+'T00:00:00Z'));
+function fmtDate(s,short=false){
+ if(!s)return 'Undated';
+ if(s.length===4)return s;
+ const monthOnly=s.length===7;
+ const date=new Date(s+(monthOnly?'-01':'')+'T00:00:00Z');
+ const options={month:short?'short':'long',year:'numeric',timeZone:'UTC'};
+ if(!monthOnly)options.day='numeric';
+ return new Intl.DateTimeFormat('en-GB',options).format(date);
+}
 const link = row => `#record/${encodeURIComponent(row.id)}`;
 const typeOf = row => row.kind || row.type || '';
 const meta = row => [row.country||row.publisher, row.date ? fmtDate(row.date,true) : ''].filter(Boolean).map(safe).join(' <span class="sep">·</span> ');
 const tag = (word,style='') => `<span class="tag ${style}">${safe(word)}</span>`;
 const node = $('#content');
-let currentView = '', currentLayer = 'membership', sectionFilter = '', localQuery = '';
+let currentView = '', currentLayer = 'coverage', sectionFilter = '', localQuery = '';
 const searchDialog = $('#lookup');
 $('#menu').innerHTML=icon('menu',22);
 $('#openSearch').innerHTML=icon('search',17)+'<span>Search records</span><kbd>/</kbd>';
 $('#nav').innerHTML=navGroups.map(([name,sections])=>`<div class="navGroup"><p>${name}</p>${sections.map(id=>`<a href="#${id}" data-page="${id}">${icon(pages[id][1])}<span>${pages[id][0]}</span></a>`).join('')}</div>`).join('');
-const positions = {IE:[81,182,'Ireland',-10,-17],BE:[262,242,'Belgium',14,0],FR:[227,324,'France',11,18],IT:[366,411,'Italy',-10,-18],GR:[513,510,'Greece',15,3]};
-function mapGraphic(layer,hero=false){
- const edges=data.connections.filter(row=>row.layer===layer);
- const active=[...new Set(edges.flatMap(row=>[row.from,row.to]))];
- const view = hero ? '-90 75 640 345' : layer==='membership' ? '-80 45 635 420':'130 210 590 395';
- const id=hero?'h':'n';
- const routes=edges.map(row=>{
-  const a=positions[row.from], b=positions[row.to]; if(!a||!b)return '';
-  const cx=(a[0]+b[0])/2+8, cy=Math.min(a[1],b[1])-Math.abs(a[0]-b[0])*.31-12;
-  const path=`M${a[0]} ${a[1]} Q${cx} ${cy} ${b[0]} ${b[1]}`;
-  return `<a href="${link(row)}" aria-label="${safe(row.title)}"><title>${safe(row.title)}</title><path class="mapHit" d="${path}"/><path class="routeLine" ${layer==='historical'?'stroke-dasharray="6 4"':''} d="${path}"/></a>`;
- }).join('');
- const markers=active.filter(code=>positions[code]).map(code=>{
-  const [x,y,name,dx,dy]=positions[code];
-  return `<g class="marker" transform="translate(${x} ${y})"><circle r="11" class="halo"/><circle r="4.5" class="pin"/><text x="${dx}" y="${dy}" text-anchor="${dx<0?'end':'start'}">${name}</text></g>`;
- }).join('');
- return `<svg class="geo" viewBox="${view}" role="img" aria-label="${layer==='historical'?'Historical prosecutorial account connecting Italy and Greece':'Declared organisational memberships linking Ireland and France with Belgium'}">
- <defs><pattern id="dots${id}" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#354943"/><circle cx="1.5" cy="1.5" r=".7" fill="#677b71"/></pattern><pattern id="grid${id}" width="72" height="58" patternUnits="userSpaceOnUse"><path d="M72 0H0V58" fill="none" stroke="#8ca69b" stroke-width=".7" opacity=".42"/></pattern></defs>
- <rect x="-200" y="-600" width="1800" height="2300" fill="#1c2d29"/>
- <g fill="url(#dots${id})" stroke="#819087" stroke-width=".68" stroke-linejoin="round">${window.europeOutlines.map(([,d])=>`<path d="${d}"/>`).join('')}</g>
- <rect x="-200" y="-600" width="1800" height="2300" fill="url(#grid${id})"/>
- ${routes}${markers}</svg>`;
+function recordCountries(row){
+ const names=(row.country||'').split(/\s*·\s*/);
+ return [...new Set([...(row.countries||[]),row.from,row.to,...Object.entries(window.worldPlaces).filter(([,place])=>names.includes(place.name)).map(([code])=>code)].filter(Boolean))];
+}
+function mapGraphic(layer,hero=false){return window.worldMapGraphic(layer,hero,data.connections,[...records.values()].filter(r=>r.category!=='sources').map(r=>({...r,countries:recordCountries(r)})));}
+function countryBrowse(code){
+ const place=window.worldPlaces[code];
+ const entries=[...records.values()].filter(row=>recordCountries(row).includes(code));
+ return `<div class="detailTop"><a class="back" href="#network">‹ &nbsp; Network map</a><div class="kicker">${icon('globe',16)}${safe(place.region)}</div><h1>${safe(place.name)}</h1><p>Published records associated with this country or territory.</p></div><div class="countryGroups">${Object.entries(categoryPages).filter(([key])=>entries.some(r=>r.category===key)).map(([key,page])=>`<section class="panel"><div class="panelHead"><h2>${safe(key==='connections'?'Cross-border relationships':pages[page][0])}</h2></div>${entries.filter(r=>r.category===key).map(compactRow).join('')}</section>`).join('')}</div>`;
 }
 function dashStat(title,value,page,ic,color){return `<a class="stat" href="#${page}"><div class="statTitle"><span class="tileIcon ${color}">${icon(ic,17)}</span><span>${title}</span></div><strong>${value}</strong></a>`;}
 function panelHead(title,page,text){return `<div class="panelHead"><h2>${title}</h2><a href="#${page}">${text||'View all'}</a></div>`;}
@@ -87,20 +82,20 @@ function timelineRow(row){
  return `<a class="timelineItem" href="${link(row)}"><span class="timeMark"></span><time>${safe(fmtDate(row.date,true))}</time><strong>${safe(row.title)}</strong><small>${safe(row.country)}</small></a>`;
 }
 function dashboard(){
- const lead=[data.findings.find(r=>r.country?.includes('Germany')),data.findings.find(r=>r.sources.some(s=>s.startsWith('EV-0'))),...data.findings].filter((r,i,all)=>r && all.findIndex(x=>x?.id===r.id)===i).slice(0,3);
- return `<section class="hero"><div class="heroMap">${mapGraphic('membership',true)}</div><div class="heroText"><div class="heroKicker"><span></span>European investigation</div><h1>Cross-border<br>protest networks</h1><p>Evidence-led analysis of European protest movements, organisational ties and judicial records.</p><a class="heroButton" href="#network">${icon('network',16)}Explore network map</a></div><div class="mapLegend"><i></i>Declared membership</div></section>
+ const lead=[data.findings.find(r=>r.countries?.includes('AU')||r.country==='Australia'),data.findings.find(r=>r.country?.includes('Germany')),data.findings.find(r=>r.sources.some(s=>s.startsWith('EV-0'))),...data.findings].filter((r,i,all)=>r && all.findIndex(x=>x?.id===r.id)===i).slice(0,3);
+ return `<section class="hero"><div class="heroMap">${mapGraphic('coverage',true)}</div><div class="heroText"><div class="heroKicker"><span></span>Worldwide investigation</div><h1>Cross-border<br>protest networks</h1><p>Evidence-led analysis of protest movements, cross-border affiliations and judicial records worldwide.</p><a class="heroButton" href="#network">${icon('network',16)}Explore network map</a></div><div class="mapLegend"><i></i>Documented locations</div></section>
  <div class="overviewLine"><h2>Investigation overview</h2><span>Recorded ${revision}</span></div>
- <div class="stats">${dashStat('Verified findings',data.findings.filter(r=>/^fact$/i.test(r.kind)).length,'findings','check','green')}${dashStat('Organisations',data.organisations.length,'organisations','org','blue')}${dashStat('Judicial cases',new Set(data.judicial.map(r=>r.caseId)).size,'judicial','scale','amber')}${dashStat('Evidence sources',data.sources.length,'sources','archive','purple')}</div>
+ <div class="stats">${dashStat('Verified findings',data.findings.filter(r=>/^fact$/i.test(r.kind)).length,'findings','check','green')}${dashStat('Organisations',data.organisations.length,'organisations','org','blue')}${dashStat('Judicial cases',new Set(data.judicial.map(r=>r.caseId)).size,'judicial','scale','amber')}${dashStat('Evidence records',data.sources.length,'sources','archive','purple')}</div>
  <div class="dashGrid"><section class="panel">${panelHead('Selected findings','findings','All findings')}${lead.map(findRow).join('')}</section><section class="panel">${panelHead('Incident timeline','timeline','Full timeline')}<div class="miniTimeline">${byDate(data.events).slice(0,3).map(timelineRow).join('')}</div></section></div>
  <div class="dashGrid lowerGrid"><section class="panel">${panelHead('Active investigations','investigations')}${data.investigations.map(compactRow).join('')}</section><section class="panel">${panelHead('Unresolved questions','questions')}${data.questions.slice(0,3).map(compactRow).join('')}</section></div>`;
 }
 function compactRow(row){return `<a class="compact" href="${link(row)}"><small>${safe(row.id)} · ${safe(typeOf(row))}</small><strong>${safe(row.title)}</strong></a>`;}
-function titleBlock(section){const p=pages[section];return `<div class="pageIntro"><div class="kicker">${icon(p[1],16)}European investigation</div><h1>${p[0]}</h1><p>${p[2]||''}</p></div>`;}
+function titleBlock(section){const p=pages[section];return `<div class="pageIntro"><div class="kicker">${icon(p[1],16)}Worldwide investigation</div><h1>${p[0]}</h1><p>${p[2]||''}</p></div>`;}
 function listRows(section){
  let rows=data[Object.keys(categoryPages).find(k=>categoryPages[k]===section)]||[];
  return section==='timeline'||section==='judicial'?byDate(rows):rows;
 }
-function searchText(row){return [row.id,row.title,row.summary,row.kind,row.stage,row.short,row.country,row.date,row.publisher,row.type,row.locator,row.quote,row.context,...(row.sources||[]),...(row.notes||[]).map(n=>n.text)].filter(Boolean).join(' ').toLowerCase();}
+function searchText(row){return [row.id,row.title,row.summary,row.kind,row.stage,row.short,row.country,...recordCountries(row).flatMap(code=>[window.worldPlaces[code]?.name,window.worldPlaces[code]?.region]),row.date,row.publisher,row.type,row.locator,row.quote,row.context,...(row.sources||[]),...(row.notes||[]).map(n=>n.text)].filter(Boolean).join(' ').toLowerCase();}
 function listItems(section){
  const list=listRows(section).filter(r=>(!sectionFilter || (section==='judicial'?r.stage:typeOf(r))===sectionFilter)&&searchText(r).includes(localQuery.toLowerCase()));
  return `<p class="countLine" role="status">${list.length} ${list.length===1?'record':'records'}</p>${list.length ? `<div class="${section==='timeline'?'longTimeline':'recordList'}">${list.map(row=>section==='timeline'?timelineRow(row):`<a class="listCard" href="${link(row)}"><div class="listIcon">${icon(pages[section][1],22)}</div><div><div class="rowCaption"><span>${safe(row.id)}</span>${tag(section==='judicial'?row.stage:typeOf(row),row.kind==='Fact'?'green':'')}</div><h2>${safe(row.title)}</h2><p>${safe(row.summary||row.context)}</p><small>${meta(row)}</small></div>${icon('chevron',16)}</a>`).join('')}</div>`:`<div class="empty">No matching records. <button data-reset>Clear filters</button></div>`}`;
@@ -111,14 +106,18 @@ function listing(section){
  return `${titleBlock(section)}<div class="tools"><label class="fieldSearch">${icon('search')}<input id="localQuery" type="search" placeholder="Filter records" aria-label="Filter these records"></label><label class="selectBox">${icon('filter')}<select aria-label="Filter by record type" id="kindFilter"><option value="">All ${section==='judicial'?'stages':'types'}</option>${choices.map(c=>`<option>${safe(c)}</option>`).join('')}</select></label></div><div id="listArea">${listItems(section)}</div>`;
 }
 function network(){
- const historical=currentLayer==='historical';
- return `${titleBlock('network')}<div role="group" aria-label="Relationship layer" class="switcher"><button data-layer="membership" aria-pressed="${!historical}">Declared membership</button><button data-layer="historical" aria-pressed="${historical}">Historical account</button></div>
- <div class="mapPanel">${mapGraphic(currentLayer)}<div class="mapLegend"><i></i>${historical?'Reported collaboration · 2011':'Declared membership'}</div></div><div class="mapNote"><span>Markers represent countries. Select a relationship below for its sources.</span><a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></div>
- <section class="panel connectionPanel"><div class="panelHead"><h2>${historical?'Reported historical relationship':'Documented memberships'}</h2></div>${data.connections.filter(r=>r.layer===currentLayer).map(compactRow).join('')}</section>`;
+ const layers={coverage:'Country coverage',membership:'Declared affiliations',cosignature:'Co-signatures',historical:'Historical accounts'};
+ const entries=[...records.values()].filter(r=>r.category!=='sources');
+ const active=Object.entries(window.worldPlaces).filter(([code])=>entries.some(row=>recordCountries(row).includes(code)));
+ const regions=['Africa','Asia','Europe','North America','South America','Oceania'];
+ const groups=regions.map(region=>{const places=active.filter(([,place])=>place.region===region).sort((a,b)=>a[1].name.localeCompare(b[1].name));return `<div class="countryRow"><h3>${region}</h3><div>${places.map(([code,place])=>`<a href="#country/${code}">${safe(place.name)}</a>`).join('')||'<span>No records in this edition</span>'}</div></div>`;}).join('');
+ const list=currentLayer==='coverage'?`<section class="panel connectionPanel"><div class="panelHead"><h2>Browse by region</h2><span class="rowCaption">${active.length} countries and territories</span></div>${groups}</section>`:`<section class="panel connectionPanel"><div class="panelHead"><h2>${layers[currentLayer]}</h2></div>${data.connections.filter(r=>r.layer===currentLayer).map(compactRow).join('')}</section>`;
+ return `${titleBlock('network')}<div role="group" aria-label="Map layer" class="switcher">${Object.entries(layers).map(([key,label])=>`<button data-layer="${key}" aria-pressed="${key===currentLayer}">${label}</button>`).join('')}</div>
+ <div class="mapPanel">${mapGraphic(currentLayer)}<div class="mapLegend"><i></i>${layers[currentLayer]}</div></div><div class="mapNote"><span>${currentLayer==='coverage'?'Select a country or territory to read its records. Unmarked areas have no indexed entry in this edition.':'Each line represents the relationship described by the selected evidence layer.'}</span><a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></div>${list}`;
 }
 function methodology(){
  return `<div class="pageIntro"><div class="kicker">${icon('method',16)}Research</div><h1>Evidence methodology</h1><p>How MAYHEM records a claim, tests competing explanations and preserves the material behind it.</p></div><section class="reading panel">
- <h2>Scope and attribution</h2><p>This investigation covers European far-left and anarchist activity and relevant anti-Israel and Palestine solidarity mobilisation. Right-wing movements are outside its scope. Inclusion records the activity described in a source. Any finding of criminality, extremism or hatred requires specific evidence about the actor and conduct concerned.</p>
+ <h2>Scope and attribution</h2><p>This investigation covers far-left and anarchist activity and relevant anti-Israel and Palestine solidarity mobilisation worldwide. The register starts with sourced records from Africa, Asia, Europe, North America, South America and Oceania. Country coverage grows as records are verified. Right-wing movements are outside its scope. Inclusion records the activity described in a source. Any finding of criminality, extremism or hatred requires specific evidence about the actor and conduct concerned.</p>
  <h2>Factualism</h2><dl><dt>Fact</dt><dd>A directly supported proposition. An organisation’s declaration establishes what it said. A judgment establishes what the court decided on specific counts.</dd><dt>Inference</dt><dd>An interpretation drawn from cited facts. Each analysis states the limits of that interpretation and considers alternatives.</dd><dt>Unknown</dt><dd>A question the available records leave open. The register identifies the evidence needed to resolve it.</dd></dl>
  <h2>DFAPTI evidence preservation</h2><p>Each source has a stable identifier, authority, source date, locator, short quotation and recording date. The archive identifies the preserved material and its SHA-256 checksum. A full-document capture and an excerpt have different evidentiary reach.</p>
  <h2>DFAPTA all-paths analysis</h2><p>For each question, consider explanations that fit the record, evidence that weighs against each, and the material needed to decide between them. A shared date, public slogan or campaign objective alone leaves central direction unresolved. Judicial findings are confined to their case.</p><p>This edition remains open for evidence intake. Its behavioural entries are working interpretations. Formal DFAPTA review begins when the operator freezes a defined evidence set.</p>
@@ -136,15 +135,17 @@ function closeMenu(){document.body.classList.remove('menuOpen');$('#menu').setAt
 function render(focus=false){
  const route=location.hash.slice(1)||'dashboard';
  const row=route.startsWith('record/')?records.get(route.slice(7)):null;
- currentView=row?row.section:route;
+ const code=route.startsWith('country/')?route.slice(8):'';
+ const country=Object.hasOwn(window.worldPlaces,code)?window.worldPlaces[code]:null;
+ currentView=country?'network':row?row.section:route;
  closeMenu();
  sectionFilter=''; localQuery='';
  const valid=Object.hasOwn(pages,currentView);
  const label=valid?pages[currentView][0]:'Record unavailable';
  $('#breadcrumb').textContent=label;
- document.title=(row?row.title:label)+' · MAYHEM';
+ document.title=(country?country.name:row?row.title:label)+' · MAYHEM';
  document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===currentView||a.dataset.page==='dashboard'&&['questions','investigations','findings'].includes(currentView))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- node.innerHTML=row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='method'?methodology():listing(currentView);
+ node.innerHTML=country?countryBrowse(code):row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='method'?methodology():listing(currentView);
  if(focus){node.focus({preventScroll:true});window.scrollTo(0,0);}
 }
 function drawResults(){

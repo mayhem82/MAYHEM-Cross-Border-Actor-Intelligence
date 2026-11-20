@@ -5,16 +5,17 @@ import { runInNewContext } from 'node:vm';
 
 const docs = new URL('../docs/', import.meta.url);
 const context = { window: {} };
-for (const name of ['civic', 'cases', 'preservation']) {
+for (const name of ['civic', 'cases', 'global', 'preservation']) {
   const file = new URL('data/' + name + '.js', docs);
   runInNewContext(readFileSync(file, 'utf8'), context, { filename: file.pathname });
 }
-const { civic, cases, preservation } = context.window;
-const sources = new Map([...civic.sources, ...cases.sources].map(s => [s.id, s]));
+const { civic, cases, globalRecords, preservation } = context.window;
+const strands = [civic, cases, globalRecords];
+const sources = new Map(strands.flatMap(strand => strand.sources).map(s => [s.id, s]));
 const seen = new Set();
 const sum = bytes => createHash('sha256').update(bytes).digest('hex');
 
-for (const strand of [civic, cases]) {
+for (const strand of strands) {
   for (const [section, entries] of Object.entries(strand)) {
     for (const entry of entries) {
       assert(entry.id && entry.title, 'Every record requires an ID and title');
