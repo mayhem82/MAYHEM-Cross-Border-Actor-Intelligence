@@ -42,7 +42,7 @@ for(const key of Object.keys(categoryPages)){
 }
 const capture = window.preservation || {};
 const latestRecorded = Object.values(capture).map(entry => entry.recorded).filter(Boolean).sort().at(-1);
-const sourceUrl = 'https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence';
+
 function fmtDate(s,short=false){
  if(!s)return 'Undated';
  if(s.length===4)return s;
@@ -116,12 +116,12 @@ function network(){
  <div class="mapPanel">${mapGraphic(currentLayer)}<div class="mapLegend"><i></i>${layers[currentLayer]}</div></div><div class="mapNote"><span>${currentLayer==='coverage'?'Select a country or territory to read its records. Unmarked areas have no indexed entry in this edition.':'Each line represents the relationship described by the selected evidence layer.'}</span><a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></div>${list}`;
 }
 function methodology(){
- return `<div class="pageIntro"><div class="kicker">${icon('method',16)}Research</div><h1>Evidence methodology</h1><p>How MAYHEM records a claim, tests competing explanations and preserves the material behind it.</p></div><section class="reading panel">
+ return `<div class="pageIntro"><div class="kicker">${icon('method',16)}Research</div><h1>Evidence methodology</h1><p>How the investigation records a claim, tests competing explanations and preserves the material behind it.</p></div><section class="reading panel">
  <h2>Scope and attribution</h2><p>This investigation covers far-left and anarchist activity and relevant anti-Israel and Palestine solidarity mobilisation worldwide. The register starts with sourced records from Africa, Asia, Europe, North America, South America and Oceania. Country coverage grows as records are verified. Right-wing movements are outside its scope. Inclusion records the activity described in a source. Any finding of criminality, extremism or hatred requires specific evidence about the actor and conduct concerned.</p>
  <h2>Factualism</h2><dl><dt>Fact</dt><dd>A directly supported proposition. An organisation’s declaration establishes what it said. A judgment establishes what the court decided on specific counts.</dd><dt>Inference</dt><dd>An interpretation drawn from cited facts. Each analysis states the limits of that interpretation and considers alternatives.</dd><dt>Unknown</dt><dd>A question the available records leave open. The register identifies the evidence needed to resolve it.</dd></dl>
- <h2>DFAPTI evidence preservation</h2><p>Each source has a stable identifier, authority, source date, locator, short quotation and recording date. The archive identifies the preserved material and its SHA-256 checksum. A full-document capture and an excerpt have different evidentiary reach.</p>
- <h2>DFAPTA all-paths analysis</h2><p>For each question, consider explanations that fit the record, evidence that weighs against each, and the material needed to decide between them. A shared date, public slogan or campaign objective alone leaves central direction unresolved. Judicial findings are confined to their case.</p><p>This edition remains open for evidence intake. Its behavioural entries are working interpretations. Formal DFAPTA review begins when the operator freezes a defined evidence set.</p>
- <h2>Discrepancies and corrections</h2><p>Keep source accounts in their original terms. Attribute attendance estimates and distinguish an estimate from an independently verified count. A correction receives a new evidence ID and references the earlier entry. The source files and revision history are public.</p><p><a href="${sourceUrl}/commits/main/">Revision history</a> · <a href="https://github.com/mayhem82/mayhem-investigations/blob/main/SPEC.md">MAYHEM specification</a></p></section>`;
+ <h2>Evidence preservation</h2><p>Each source has a stable identifier, authority, source date, locator, short quotation and recording date. The archive identifies the preserved material and its SHA-256 checksum. A full-document capture and an excerpt have different evidentiary reach.</p>
+ <h2>Considering explanations</h2><p>For each question, consider explanations that fit the record, evidence that weighs against each, and the material needed to decide between them. A shared date, public slogan or campaign objective alone leaves central direction unresolved. Judicial findings are confined to their case.</p><p>This edition remains open for evidence intake. Its behavioural entries are working interpretations.</p>
+ <h2>Discrepancies and corrections</h2><p>Keep source accounts in their original terms. Attribute attendance estimates and distinguish an estimate from an independently verified count. A correction receives a new evidence ID and references the earlier entry. The source files and revision history are public.</p></section>`;
 }
 function sourceDetail(row){
  const archive=capture[row.id];
@@ -143,7 +143,7 @@ function render(focus=false){
  const valid=Object.hasOwn(pages,currentView);
  const label=valid?pages[currentView][0]:'Record unavailable';
  $('#breadcrumb').textContent=label;
- document.title=(country?country.name:row?row.title:label)+' · MAYHEM';
+ document.title=(country?country.name:row?row.title:label)+' · Cross-Border Protest Networks';
  document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===currentView||a.dataset.page==='dashboard'&&['questions','investigations','findings'].includes(currentView))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
  node.innerHTML=country?countryBrowse(code):row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='method'?methodology():listing(currentView);
  if(focus){node.focus({preventScroll:true});window.scrollTo(0,0);}

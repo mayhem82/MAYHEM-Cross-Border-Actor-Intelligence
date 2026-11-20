@@ -4,8 +4,11 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="theme-color" content="#152322">
-  <meta name="description" content="Explore the worldwide MAYHEM public evidence register for protest movements and cross-border relationships. Trace findings to court records, official reports and organisations’ own publications.">
-  <title>Investigation dashboard · MAYHEM</title>
+  <meta name="description" content="Explore the worldwide public evidence register for protest movements and cross-border relationships. Trace findings to court records, official reports and organisations’ own publications.">
+  <title>Cross-Border Protest Networks</title>
+  <link rel="manifest" href="./manifest.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/app-180.png">
+  <meta name="apple-mobile-web-app-title" content="Protest Networks">
   <link rel="icon" href="./assets/mark.svg" type="image/svg+xml">
   <link rel="stylesheet" href="./style.css">
   <script defer src="./assets/world.js"></script>
@@ -15,24 +18,34 @@
   <script defer src="./data/global.js"></script>
   <script defer src="./data/preservation.js"></script>
   <script defer src="./app.js"></script>
+  <script defer src="./install.js"></script>
+  <script defer src="./share.js"></script>
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <aside id="sidebar" aria-label="Investigation workspace">
-    <a class="brand" href="#dashboard"><img src="./assets/mark.svg" width="40" height="40" alt=""><span><strong>MAYHEM</strong><small>Investigations</small></span></a>
+    <a class="brand" href="#dashboard"><img src="./assets/mark.svg" width="40" height="40" alt=""><span><strong>PROTEST</strong><small>Networks</small></span></a>
     <nav id="nav" aria-label="Main navigation"></nav>
-    <footer class="railFoot"><a href="https://mayhem82.github.io/mayhem-investigations/">MAYHEM investigations <span aria-hidden="true">↗</span></a></footer>
   </aside>
   <button id="scrim" aria-label="Close navigation" hidden></button>
   <div class="workspace">
     <header class="topbar">
       <button id="menu" class="iconButton" aria-label="Open navigation" aria-controls="sidebar" aria-expanded="false"></button>
       <div class="crumb"><span>Investigations</span><i>/</i><strong id="breadcrumb">Dashboard</strong></div>
-      <button id="openSearch" class="searchButton" aria-label="Search all records"></button>
+      <div class="topActions">
+        <button id="installApp" class="appAction" type="button" aria-label="Install app" title="Install app" hidden><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12m-5-5 5 5 5-5M4 16v5h16v-5"/></svg><span>Install app</span></button>
+        <button id="copySite" class="appAction" type="button" title="Copy site link" aria-label="Copy site link"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="8" width="11" height="12" rx="2"/><path d="M16 8V6a2 2 0 0 0-2-2H6a2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h2"/></svg><span>Copy link</span></button>
+        <span id="copyStatus" class="copyStatus" role="status" aria-live="polite"></span>
+        <button id="openSearch" class="searchButton" aria-label="Search all records"></button>
+      </div>
     </header>
-    <main id="content" tabindex="-1"><noscript><h1>Cross-border protest networks worldwide</h1><p>Enable JavaScript to browse the interactive registers, or read the <a href="https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence/tree/main/docs/data">published source records</a>.</p></noscript></main>
-    <footer class="pageFoot"><a href="https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence/tree/v1.1.1">Worldwide edition · v1.1.1</a><a href="#method">Evidence methodology</a></footer>
+    <main id="content" tabindex="-1"><noscript><h1>Cross-border protest networks worldwide</h1><p>Enable JavaScript to browse the interactive registers.</p></noscript></main>
+    <footer class="pageFoot"><span>Worldwide investigation</span><a href="#method">Evidence methodology</a></footer>
   </div>
+  <dialog id="installGuide" class="siteDialog" aria-labelledby="installTitle">
+    <div class="dialogHead"><h2 id="installTitle">Install Protest Networks</h2><button class="iconButton" type="button" aria-label="Close install guide" data-dismiss-install>×</button></div>
+    <p id="installSteps"></p>
+  </dialog>
   <dialog id="lookup" aria-labelledby="lookupTitle"><div class="dialogHead"><h2 id="lookupTitle">Search the investigation</h2><button class="iconButton" data-close aria-label="Close search">×</button></div><label for="query" class="visuallyHidden">Search records</label><input type="search" id="query" placeholder="Search by title, country, keyword or ID" autocomplete="off"><div id="results" aria-live="polite"></div></dialog>
 </body>
 </html>
