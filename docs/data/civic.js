@@ -1303,6 +1303,30 @@ window.civic = {
       "countries": [
         "IE"
       ]
+    },
+    {
+      "id": "TL-004",
+      "title": "European Palestine coordination network founded",
+      "summary": "ECCP says it was founded in 1986 as a network of European committees, organisations, NGOs and solidarity movements.",
+      "kind": "Organisational development",
+      "country": "Belgium",
+      "countries": [
+        "BE"
+      ],
+      "date": "1986",
+      "sources": [
+        "EV-001"
+      ],
+      "notes": [
+        {
+          "label": "Date precision",
+          "text": "The organisation gives the founding year. Its published profile does not specify a day or month."
+        },
+        {
+          "label": "Coverage",
+          "text": "This is the earliest event currently indexed. Later records do not provide a continuous account of every year."
+        }
+      ]
     }
   ],
   "findings": [
