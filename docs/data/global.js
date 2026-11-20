@@ -318,6 +318,50 @@ window.globalRecords = {
       "quote": "a very small number of people starting shouting matches on the sidelines",
       "context": "In a broadcast three days later, an ABC reporter described shouting matches and said the event he reported was peaceful.",
       "type": "Broadcast transcript"
+    },
+    {
+      "id": "EV-230",
+      "title": "Party newspaper reports May 2002 London march",
+      "publisher": "Revolutionary Communist Party of Britain (Marxist–Leninist), Workers’ Daily",
+      "url": "https://www.rcpbml.org.uk/wdie-02/d02-95.htm",
+      "date": "2002-05-20",
+      "locator": "Opening report and event-specific paragraphs",
+      "quote": "on Saturday May 18 when many thousands marched",
+      "context": "The paper reports the 18 May Palestine solidarity march and attributes an attendance estimate to the organiser.",
+      "type": "Party newspaper report"
+    },
+    {
+      "id": "EV-231",
+      "title": "Party newspaper reports September 2002 London march",
+      "publisher": "Revolutionary Communist Party of Britain (Marxist–Leninist), Workers’ Daily",
+      "url": "https://www.rcpbml.org.uk/wdie-02/d02-178.htm",
+      "date": "2002-09-30",
+      "locator": "Opening report and event-specific paragraphs",
+      "quote": "on Saturday, September 28",
+      "context": "The paper reports the anti-war and Palestine solidarity march and identifies the organisations that called it.",
+      "type": "Party newspaper report"
+    },
+    {
+      "id": "EV-232",
+      "title": "Coalition report of April 2003 London demonstration",
+      "publisher": "Revolutionary Communist Party of Britain (Marxist–Leninist), Workers’ Daily",
+      "url": "https://www.rcpbml.org.uk/wdie-03/d03-33.htm",
+      "date": "2003-04-14",
+      "locator": "Opening report and event-specific paragraphs",
+      "quote": "demonstrated in Central London on Saturday",
+      "context": "The newspaper reproduces a Stop the War Coalition report of the 12 April demonstration.",
+      "type": "Party newspaper report"
+    },
+    {
+      "id": "EV-233",
+      "title": "Party newspaper reports May 2006 demonstrations",
+      "publisher": "Revolutionary Communist Party of Britain (Marxist–Leninist), Workers’ Daily",
+      "url": "https://rcpbml.org.uk/wdie-06/d06-042.htm",
+      "date": "2006-05-29",
+      "locator": "Opening report and event-specific paragraphs",
+      "quote": "people demonstrated in London's Trafalgar Square on May 20, 2006",
+      "context": "The paper reports separate demonstrations on 20 May 2006 in London and Newcastle.",
+      "type": "Party newspaper report"
     }
   ],
   "organisations": [
@@ -2775,6 +2819,106 @@ window.globalRecords = {
         {
           "label": "Review",
           "text": "The later external review describes the encampment as not having erupted into physical violence. These descriptions have different wording and scopes. The precise relationship between the reported scuffle and the reviewer’s assessment remains unresolved."
+        }
+      ]
+    },
+    {
+      "id": "TL-330",
+      "title": "London Palestine solidarity march",
+      "summary": "A party newspaper reports a Palestine Solidarity Campaign march.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2002-05-18",
+      "sources": [
+        "EV-230"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-331",
+      "title": "London anti-war and Palestine solidarity march",
+      "summary": "A party newspaper reports a march called by Stop the War Coalition and the Muslim Association of Britain.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2002-09-28",
+      "sources": [
+        "EV-231"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-332",
+      "title": "London anti-war demonstration",
+      "summary": "A Stop the War Coalition account reproduced by a party newspaper reports a national demonstration.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2003-04-12",
+      "sources": [
+        "EV-232"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-333",
+      "title": "London Palestine solidarity rally",
+      "summary": "A party newspaper reports a demonstration organised by six organisations.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2006-05-20",
+      "sources": [
+        "EV-233"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-334",
+      "title": "Newcastle Palestine solidarity rally",
+      "summary": "The same party newspaper reports a separate rally in Newcastle on the same day.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2006-05-20",
+      "sources": [
+        "EV-233"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
         }
       ]
     }

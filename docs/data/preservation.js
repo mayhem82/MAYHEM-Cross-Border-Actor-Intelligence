@@ -503,5 +503,53 @@ window.preservation = {
     "originalBytes": 294357,
     "retrieved": "2026-11-20T20:15:42.410Z",
     "resolvedUrl": "https://www.abc.net.au/news/2024-05-06/the-pro-palestinian-camps-setting-up-at-australian/103812198"
+  },
+  "EV-230": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-230.txt",
+    "format": "txt",
+    "sha256": "49d22ccf3ac1e7daad6ef56cb0482a286bac27a2fc9912c4e430aab0e5c727a0",
+    "recorded": "2026-11-21",
+    "originalSha256": "5c134a2df515adf44f2715f0a82ac6b21871d40af9d924ecaf8efeb9345a263a",
+    "originalFormat": "html",
+    "originalBytes": 31113,
+    "retrieved": "2026-11-20T20:20:03.926Z",
+    "resolvedUrl": "https://www.rcpbml.org.uk/wdie-02/d02-95.htm"
+  },
+  "EV-231": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-231.txt",
+    "format": "txt",
+    "sha256": "39cd2e92278808b4338ce0af6bb13323a0572a220dc506697a478524f88ff55e",
+    "recorded": "2026-11-21",
+    "originalSha256": "95fb02c094d39e87dba37ea11092274fce768a10cfd6e4f0e39c9424675c01e4",
+    "originalFormat": "html",
+    "originalBytes": 28330,
+    "retrieved": "2026-11-20T20:20:03.929Z",
+    "resolvedUrl": "https://www.rcpbml.org.uk/wdie-02/d02-178.htm"
+  },
+  "EV-232": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-232.txt",
+    "format": "txt",
+    "sha256": "a1ffece2329ef16be3e0f5d6dc18f01c1c5ae48f70dec99549fa0efe202fca6b",
+    "recorded": "2026-11-21",
+    "originalSha256": "4ced15dfdfe86bc388a2eab7da75b1cf6c2285e8542f29acecea25b8ba15e4c4",
+    "originalFormat": "html",
+    "originalBytes": 42509,
+    "retrieved": "2026-11-20T20:20:04.253Z",
+    "resolvedUrl": "https://www.rcpbml.org.uk/wdie-03/d03-33.htm"
+  },
+  "EV-233": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-233.txt",
+    "format": "txt",
+    "sha256": "13080695cb14137507a6198110f43061fb41474a32bf23fc8ee524e4acf81130",
+    "recorded": "2026-11-21",
+    "originalSha256": "a2aa5f7329f86e1052648fc59c062e101c0530c598573d8f185bf2a04f675aca",
+    "originalFormat": "html",
+    "originalBytes": 61055,
+    "retrieved": "2026-11-20T20:20:05.722Z",
+    "resolvedUrl": "https://rcpbml.org.uk/wdie-06/d06-042.htm"
   }
 };
