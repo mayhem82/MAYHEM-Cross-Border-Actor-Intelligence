@@ -351,5 +351,17 @@ window.preservation = {
     "sha256": "24e21e8e050f67063edc216b5b17d3151e8a9f96176ed7996c2f259508d79a89",
     "recorded": "2026-11-21",
     "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-223": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-223.txt",
+    "format": "txt",
+    "sha256": "a8395caf0f754ed1f4f11fe214005c8118ffd5434558bb17cd2603a42cb592af",
+    "recorded": "2026-11-21",
+    "originalSha256": "2a7177a0a2ad6d517de3f64de089bffc768db943124229a0b5b0cbff14ab5266",
+    "originalFormat": "html",
+    "originalBytes": 124921,
+    "retrieved": "2026-11-20T20:08:15.125Z",
+    "resolvedUrl": "https://www.cpusa.org/party_voices/cp-and-ycl-take-it-to-the-streets-ceasefire-now/"
   }
 };

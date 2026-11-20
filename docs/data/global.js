@@ -241,6 +241,17 @@ window.globalRecords = {
       "quote": "a protest called by Palestine Solidairty Campaign and other organisations",
       "context": "The campaign reports a 9 August march and rally. Its attendance figure is attributed to its own account.",
       "type": "Campaign report"
+    },
+    {
+      "id": "EV-223",
+      "title": "Communist Party USA reports October 2023 ceasefire actions",
+      "publisher": "Communist Party USA",
+      "url": "https://www.cpusa.org/party_voices/cp-and-ycl-take-it-to-the-streets-ceasefire-now/",
+      "date": "2023-10-24",
+      "locator": "Sections for Minnesota, Chicago, Washington, New York, New Jersey, Ohio, Michigan, northern California, Arizona, Oregon and North Carolina",
+      "quote": "Minnesotan CP members were at an action in Duluth, Minnesota on Oct. 17.",
+      "context": "The party retrospectively reports participation by its members and youth organisation in dated ceasefire actions across US cities.",
+      "type": "Party report"
     }
   ],
   "organisations": [
@@ -2059,6 +2070,406 @@ window.globalRecords = {
         {
           "label": "Source and limits",
           "text": "The campaign’s reported attendance is an organiser-side estimate. Other cities require their own event records."
+        }
+      ]
+    },
+    {
+      "id": "TL-300",
+      "title": "Ceasefire action in Columbus, Ohio",
+      "summary": "Party members joined a march.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-08",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-301",
+      "title": "Ceasefire action in San Francisco, California",
+      "summary": "The party reports that members of several local clubs marched.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-09",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-302",
+      "title": "Ceasefire action in Minneapolis, Minnesota",
+      "summary": "Members of the Twin Cities club rallied.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-10",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-303",
+      "title": "Ceasefire action in New York City, New York",
+      "summary": "The party reports youth organisation members joined a rally.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-13",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-304",
+      "title": "Ceasefire action in Portland, Oregon",
+      "summary": "The party reports its members joined a protest.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-13",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-305",
+      "title": "Ceasefire action in Greensboro, North Carolina",
+      "summary": "The party reports local club members attended an action.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-13",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-306",
+      "title": "Ceasefire action in Ann Arbor, Michigan",
+      "summary": "The report says party members were in the streets one day before the Dearborn event.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-13",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-307",
+      "title": "Ceasefire action in Dearborn, Michigan",
+      "summary": "The party reports its Washtenaw club attended a rally and march.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-14",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-308",
+      "title": "Ceasefire action in San Jose, California",
+      "summary": "The party reports members were present at actions in the city.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-15",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-309",
+      "title": "Ceasefire action in Washington, DC",
+      "summary": "The party reports its youth organisation marched the day before its 17 October event.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-16",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-310",
+      "title": "Ceasefire action in Columbus, Ohio",
+      "summary": "The party reports its local club joined an action calling for a ceasefire resolution.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-16",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-311",
+      "title": "Ceasefire action in Tempe, Arizona",
+      "summary": "The party reports its Phoenix club joined a demonstration in Tempe.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-16",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-312",
+      "title": "Ceasefire action in Duluth, Minnesota",
+      "summary": "The party reports members attended an action.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-17",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-313",
+      "title": "Ceasefire action in Washington, DC",
+      "summary": "The party reports its members joined a coalition action.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-17",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-314",
+      "title": "Ceasefire action in New York City, New York",
+      "summary": "The party reports its youth organisation attended an action supporting a ceasefire resolution.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-17",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-315",
+      "title": "Ceasefire action in North Bergen, New Jersey",
+      "summary": "The party reports its Hudson–Bergen club attended a vigil.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-17",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-316",
+      "title": "Ceasefire action in Detroit, Michigan",
+      "summary": "The party reports members joined a demonstration.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-18",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-317",
+      "title": "Ceasefire action in New York City, New York",
+      "summary": "The party reports its youth organisation joined a second rally.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-20",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-318",
+      "title": "Ceasefire action in Chicago, Illinois",
+      "summary": "The party reports its Chicago members marched with members of a Michigan club.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-21",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-319",
+      "title": "Ceasefire action in Oakland, California",
+      "summary": "The party reports local members mobilised for a rally.",
+      "kind": "Demonstration",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2023-10-22",
+      "sources": [
+        "EV-223"
+      ],
+      "notes": [
+        {
+          "label": "Source attribution",
+          "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
         }
       ]
     }
