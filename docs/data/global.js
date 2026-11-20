@@ -230,6 +230,35 @@ window.globalRecords = {
           "text": "These publications document one action. They leave the organisation’s standing leadership and any broader relationships outside this record."
         }
       ]
+    },
+    {
+      "id": "AN-202",
+      "title": "Joint statement followed by a public gathering",
+      "summary": "Six Japanese organisations issued a joint statement and invited the public to an event. A co-organiser reported that the gathering took place.",
+      "kind": "Inference",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "2024-10-05",
+      "sources": [
+        "EV-209",
+        "EV-210"
+      ],
+      "notes": [
+        {
+          "label": "Evidence of use",
+          "text": "The Japan International Volunteer Center published the statement and open invitation on 2 October 2024. Peace Boat reported the Tokyo gathering on 9 October, naming the coordinators."
+        },
+        {
+          "label": "Alternative explanation",
+          "text": "People could have attended to commemorate victims or support a ceasefire independently of any particular organisation."
+        },
+        {
+          "label": "Unknown",
+          "text": "The sources do not measure turnout attributable to each organisation or establish how participants learned of the event."
+        }
+      ]
     }
   ],
   "connections": [

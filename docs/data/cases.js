@@ -259,6 +259,56 @@ window.cases = {
           "text": "The meeting report identifies collaboration at group level. It leaves attribution for individual acts unresolved."
         }
       ]
+    },
+    {
+      "id": "AN-102",
+      "title": "Intended deterrence through assaults",
+      "summary": "In the Dresden case, the court recorded that the group intended assaults to deter people it regarded as far right from political activity.",
+      "kind": "Court finding",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "2025-03-19",
+      "sources": [
+        "EV-102",
+        "EV-104"
+      ],
+      "notes": [
+        {
+          "label": "Evidence of use",
+          "text": "Judgment 3 StR 173/24, paragraph 6, describes the group’s intended deterrent effect from acts of violence. The convictions are detailed in the operative judgment."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The finding concerns this group and the conduct tried in this case. The paragraph does not measure changes in political participation."
+        }
+      ]
+    },
+    {
+      "id": "AN-103",
+      "title": "Misattribution preceding an assault",
+      "summary": "The court described an assault on a worker after group members wrongly attributed a political affiliation to him.",
+      "kind": "Court finding",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "2019-01-08",
+      "sources": [
+        "EV-102",
+        "EV-104"
+      ],
+      "notes": [
+        {
+          "label": "Evidence of use",
+          "text": "Judgment 3 StR 173/24, paragraphs 15–16, records the incident and serious injury. The court also describes a conviction for dangerous bodily harm."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The sequence concerns this incident. The court did not find that it occurred at a demonstration."
+        }
+      ]
     }
   ],
   "organisations": [
