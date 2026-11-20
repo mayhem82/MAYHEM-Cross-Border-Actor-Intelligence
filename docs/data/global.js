@@ -109,6 +109,72 @@ window.globalRecords = {
       "quote": "In a joint statement, the organizations called for an immediate ceasefire.",
       "context": "A co-organiser reports that humanitarian organisations held a candlelight gathering at Zojoji Temple on 5 October 2024. It describes the public call and identifies the coordinators.",
       "type": "Organiser account"
+    },
+    {
+      "id": "EV-211",
+      "title": "Indian left parties call for protest",
+      "publisher": "Communist Party of India (Marxist)",
+      "url": "https://cpim.org/left-parties-call-protest/",
+      "date": "2023-11-06",
+      "locator": "Joint statement and signatories",
+      "quote": "The state units of the Left Parties will decide the modalities of these protest actions in respective states.",
+      "context": "The five named parties issued a joint call for actions between 7 and 10 November 2023.",
+      "type": "Party publication"
+    },
+    {
+      "id": "EV-212",
+      "title": "Indian left parties report solidarity events",
+      "publisher": "Communist Party of India (Marxist)",
+      "url": "https://cpim.org/left-parties-observe-june-17-as-national-day-of-solidarity-with-palestine/",
+      "date": "2025-06-17",
+      "locator": "Opening paragraph and Delhi event report",
+      "quote": "jointly marked June 17th as the National Day of Solidarity with Palestine",
+      "context": "A party report attributes protests and meetings on 17 June 2025 to the five named parties.",
+      "type": "Party publication"
+    },
+    {
+      "id": "EV-213",
+      "title": "South African Communist Party solidarity statement",
+      "publisher": "South African Communist Party",
+      "url": "https://www.sacp.org.za/content/sacp-solidarity-statement-solidarity-palestinian-people-denounces-apartheid-israel",
+      "date": "2024-04-07",
+      "locator": "Opening paragraph",
+      "quote": "The South African Communist Party (SACP) commends the protests held in South Africa this week",
+      "context": "The party expressed support for two reported South African solidarity events.",
+      "type": "Party publication"
+    },
+    {
+      "id": "EV-214",
+      "title": "Communist Party USA reports May Day participation",
+      "publisher": "Communist Party USA",
+      "url": "https://www.cpusa.org/party_voices/cpusa-on-may-day-building-the-fightback/",
+      "date": "2025-05-06",
+      "locator": "Opening paragraphs",
+      "quote": "CPUSA clubs across the country participated with and helped mobilize",
+      "context": "The party says its local clubs participated in and helped mobilise for May Day 2025 actions.",
+      "type": "Party publication"
+    },
+    {
+      "id": "EV-215",
+      "title": "Japanese Communist Party ceasefire statement",
+      "publisher": "Japanese Communist Party",
+      "url": "https://www.jcp.or.jp/english/9980/",
+      "date": "2023-11-06",
+      "locator": "Opening paragraph of party chair’s statement",
+      "quote": "the Japanese Communist Party calls on all state governments and international organizations concerned",
+      "context": "The party chair publicly called for governments and international organisations to work for a ceasefire.",
+      "type": "Party publication"
+    },
+    {
+      "id": "EV-216",
+      "title": "Brazilian party resolution on international affairs",
+      "publisher": "Socialism and Liberty Party (PSOL)",
+      "url": "https://psol50.org.br/file/2023/11/Resolucao-Conjuntura-Internacional-Aprovada-25_11.docx.pdf",
+      "date": "2023-11-25",
+      "locator": "Resolution, numbered decision 2",
+      "quote": "Apoiamos a campanha iniciada pelo partido Podemos do Estado Espanhol",
+      "context": "The PSOL national directorate declared support for a campaign initiated by Podemos and other parties in the European Parliament’s Left group.",
+      "type": "Party publication"
     }
   ],
   "organisations": [
@@ -1003,6 +1069,251 @@ window.globalRecords = {
           "text": "The country label is the publisher’s. The statement does not establish a bilateral connection with other signatories, current affiliation or subsequent activity."
         }
       ]
+    },
+    {
+      "id": "ORG-500",
+      "title": "Communist Party of India (Marxist)",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "",
+      "sources": [
+        "EV-211",
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-501",
+      "title": "Communist Party of India",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "",
+      "sources": [
+        "EV-211",
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-502",
+      "title": "Communist Party of India (Marxist–Leninist) Liberation",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "",
+      "sources": [
+        "EV-211",
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-503",
+      "title": "All India Forward Bloc",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "",
+      "sources": [
+        "EV-211",
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-504",
+      "title": "Revolutionary Socialist Party",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "",
+      "sources": [
+        "EV-211",
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-505",
+      "title": "South African Communist Party",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "",
+      "sources": [
+        "EV-213"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-506",
+      "title": "Communist Party USA",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "",
+      "sources": [
+        "EV-214"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-507",
+      "title": "Japanese Communist Party",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "",
+      "sources": [
+        "EV-215"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-508",
+      "title": "Partido Socialismo e Liberdade (PSOL)",
+      "summary": "A party publication documents this organisation’s public statement, action or endorsement.",
+      "kind": "Political party",
+      "country": "Brazil",
+      "countries": [
+        "BR"
+      ],
+      "date": "",
+      "sources": [
+        "EV-216"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "ORG-509",
+      "title": "Podemos",
+      "summary": "PSOL’s 2023 resolution names Podemos as an initiator of a campaign it supported.",
+      "kind": "Political party",
+      "country": "Spain",
+      "countries": [
+        "ES"
+      ],
+      "date": "",
+      "sources": [
+        "EV-216"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The cited publication identifies the organisation and the specific activity or statement recorded."
+        },
+        {
+          "label": "Evidence limit",
+          "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
+        }
+      ]
     }
   ],
   "connections": [
@@ -1054,6 +1365,34 @@ window.globalRecords = {
       "from": "ZA",
       "to": "PS",
       "layer": "membership"
+    },
+    {
+      "id": "CN-203",
+      "title": "Brazilian party supports Spanish-initiated campaign",
+      "summary": "PSOL’s national directorate declared support for a campaign it attributed to Podemos and other European parliamentary parties.",
+      "kind": "Declared campaign support",
+      "country": "Brazil · Spain",
+      "countries": [
+        "BR",
+        "ES"
+      ],
+      "date": "2023-11-25",
+      "sources": [
+        "EV-216"
+      ],
+      "from": "BR",
+      "to": "ES",
+      "layer": "campaign",
+      "notes": [
+        {
+          "label": "Evidence of connection",
+          "text": "The Brazilian party’s resolution names Podemos as an initiator and declares support for the campaign."
+        },
+        {
+          "label": "Limit",
+          "text": "The resolution alone does not establish common leadership, payment, travel or completion of the proposed activity."
+        }
+      ]
     }
   ],
   "findings": [
@@ -1276,6 +1615,106 @@ window.globalRecords = {
           "text": "Peace Boat’s 9 October account records that the gathering took place on 5 October. Neither cited passage supplies an attendance count."
         }
       ]
+    },
+    {
+      "id": "TL-211",
+      "title": "Five Indian left parties call for protests",
+      "summary": "The parties issued a joint call for actions between 7 and 10 November 2023.",
+      "kind": "Political mobilisation",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2023-11-06",
+      "sources": [
+        "EV-211"
+      ],
+      "notes": [
+        {
+          "label": "Evidence",
+          "text": "The signed statement records the call. Whether any particular event took place requires another source."
+        }
+      ]
+    },
+    {
+      "id": "TL-212",
+      "title": "Indian parties report solidarity protests",
+      "summary": "CPI(M) reported that five left parties held solidarity meetings and protests.",
+      "kind": "Political mobilisation",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2025-06-17",
+      "sources": [
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "This is a party account of its own coalition’s action."
+        }
+      ]
+    },
+    {
+      "id": "TL-213",
+      "title": "South African party supports solidarity protests",
+      "summary": "SACP publicly commended events it reported in Cape Town and Johannesburg.",
+      "kind": "Political mobilisation",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "2024-04-07",
+      "sources": [
+        "EV-213"
+      ],
+      "notes": [
+        {
+          "label": "Limit",
+          "text": "The party’s statement records its support. The cited passage does not establish that it organised the protests."
+        }
+      ]
+    },
+    {
+      "id": "TL-214",
+      "title": "Communist Party USA reports May Day actions",
+      "summary": "The party reported that its clubs participated in and helped mobilise for May Day activities.",
+      "kind": "Political mobilisation",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2025-05-01",
+      "sources": [
+        "EV-214"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The retrospective was published by the party on 6 May 2025."
+        }
+      ]
+    },
+    {
+      "id": "TL-215",
+      "title": "Japanese Communist Party issues ceasefire statement",
+      "summary": "The party chair issued a public statement addressed to governments and international organisations.",
+      "kind": "Political mobilisation",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "2023-11-06",
+      "sources": [
+        "EV-215"
+      ],
+      "notes": [
+        {
+          "label": "Limit",
+          "text": "The source records a public statement. It does not establish participation in a specific demonstration."
+        }
+      ]
     }
   ],
   "analyses": [
@@ -1305,6 +1744,30 @@ window.globalRecords = {
         {
           "label": "Evidence needed",
           "text": "Contemporaneous decisions or attributed testimony would be necessary to distinguish causal accounts. Claims about intimidation require conduct-specific evidence."
+        }
+      ]
+    },
+    {
+      "id": "AN-203",
+      "title": "Joint call with state-level decisions",
+      "summary": "Five Indian left parties issued a common call while leaving decisions on state-level actions to their respective units.",
+      "kind": "Documented mechanism",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2023-11-06",
+      "sources": [
+        "EV-211"
+      ],
+      "notes": [
+        {
+          "label": "Evidence of use",
+          "text": "The joint statement identifies the parties and says state units would decide how to carry out the actions."
+        },
+        {
+          "label": "Limit",
+          "text": "The publication documents the plan. It does not establish the number or outcome of events, or command relationships outside this initiative."
         }
       ]
     }

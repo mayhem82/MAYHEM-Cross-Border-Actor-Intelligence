@@ -223,5 +223,73 @@ window.preservation = {
     "originalBytes": 217338,
     "retrieved": "2026-11-20T12:38:25.135Z",
     "resolvedUrl": "https://peaceboat.org/english/news/ceasefire-in-gaza_oct2024"
+  },
+  "EV-211": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-211.txt",
+    "format": "txt",
+    "sha256": "eba496103770d1fce8dcb5f7f274bf665b9303fdc3e0cdcc643aec3b0bec9daa",
+    "recorded": "2026-11-21",
+    "originalSha256": "6830ccac62625042e9f78093f6459576ed4b0349d69a8c61cfe75d71f4937243",
+    "originalFormat": "html",
+    "originalBytes": 46662,
+    "retrieved": "2026-11-20T14:44:00.658Z",
+    "resolvedUrl": "https://cpim.org/left-parties-call-protest/"
+  },
+  "EV-212": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-212.txt",
+    "format": "txt",
+    "sha256": "78301bc90850bc3a7f6d5814420e36aa9aea2324aa8277ff720156e63378d545",
+    "recorded": "2026-11-21",
+    "originalSha256": "539589cc16baf589e103345baf4679a44ebaae9ee4d9fa705b7df46b7cb0f32e",
+    "originalFormat": "html",
+    "originalBytes": 47599,
+    "retrieved": "2026-11-20T14:44:00.495Z",
+    "resolvedUrl": "https://cpim.org/left-parties-observe-june-17-as-national-day-of-solidarity-with-palestine/"
+  },
+  "EV-213": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-213.txt",
+    "format": "txt",
+    "sha256": "84b78b70ead3d83f7f5fc6e33cd61bab11af16cf886bbe8569368b4322129a70",
+    "recorded": "2026-11-21",
+    "originalSha256": "cd11973d9fb2773ee5f92afc62084f2093b37de9a0141715003f9fa6ea169197",
+    "originalFormat": "html",
+    "originalBytes": 86982,
+    "retrieved": "2026-11-20T14:44:01.769Z",
+    "resolvedUrl": "https://www.sacp.org.za/content/sacp-solidarity-statement-solidarity-palestinian-people-denounces-apartheid-israel"
+  },
+  "EV-214": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-214.txt",
+    "format": "txt",
+    "sha256": "059487b98ac272a03cb49f0f9cf5e61ba67cf200b930d84a8df672ded091d6b4",
+    "recorded": "2026-11-21",
+    "originalSha256": "6260456085cfa3c3bc460089f5e8ecf31505d4b369d3d2a901e71004bc91708e",
+    "originalFormat": "html",
+    "originalBytes": 104838,
+    "retrieved": "2026-11-20T14:44:02.970Z",
+    "resolvedUrl": "https://www.cpusa.org/party_voices/cpusa-on-may-day-building-the-fightback/"
+  },
+  "EV-215": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-215.txt",
+    "format": "txt",
+    "sha256": "d5e09de97499391566b0be8f84646b9f3c3c8534a2770e2e8e32692a64f43e3c",
+    "recorded": "2026-11-21",
+    "originalSha256": "f6d1164c312d5d55c59d9573de3ffab1652a330633cd10a8f3dbd448d9c9bb37",
+    "originalFormat": "html",
+    "originalBytes": 42384,
+    "retrieved": "2026-11-20T14:44:02.160Z",
+    "resolvedUrl": "https://www.jcp.or.jp/english/9980/"
+  },
+  "EV-216": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-216.txt",
+    "format": "txt",
+    "sha256": "bb44c47a69ba5156fb4cc99286c8c537ee5c215a83f7c0b2b73c019f90ed6b8d",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
   }
 };

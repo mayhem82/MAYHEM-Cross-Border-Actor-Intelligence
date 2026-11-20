@@ -4,7 +4,7 @@ An independent public register covering far-left and anarchist activity and rele
 
 ## Reading the register
 
-The dashboard links to organisation profiles, country-level network relationships, judicial dispositions, a dated timeline, behavioural analysis and the evidence archive. Select a record to inspect its sources, limits and open questions. The map shows country coverage across six inhabited continents, with separate layers for affiliations, co-signatures and historical accounts. Each relationship has a source record.
+The dashboard links to organisation profiles, country-level network relationships, judicial dispositions, a dated timeline, behavioural analysis and the evidence archive. Select a record to inspect its sources, limits and open questions. The map shows country coverage across six inhabited continents, with separate layers for affiliations, co-signatures, campaign support and historical accounts. Each relationship has a source record.
 
 ## Source and revision history
 

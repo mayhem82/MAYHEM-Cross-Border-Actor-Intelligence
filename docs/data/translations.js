@@ -131,5 +131,14 @@ window.translations = {
   },
   "EV-105": {
     "quote": "It dismisses the remaining appeals"
+  },
+  "EV-216": {
+    "quote": "We support the campaign initiated by the Podemos party of the Spanish state"
+  },
+  "ORG-508": {
+    "title": "Socialism and Liberty Party"
+  },
+  "ORG-509": {
+    "title": "We Can"
   }
 };
