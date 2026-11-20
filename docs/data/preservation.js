@@ -399,5 +399,17 @@ window.preservation = {
     "originalBytes": 109438,
     "retrieved": "2026-11-20T20:10:35.313Z",
     "resolvedUrl": "https://cpim.org/documents-2023-april-cc-report/"
+  },
+  "EV-227": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-227.txt",
+    "format": "txt",
+    "sha256": "e39a9ecc278074938fc07b050b255933bf885db40918ae8a2ded69765e50d935",
+    "recorded": "2026-11-21",
+    "originalSha256": "ddefb2a096a03881377bd66e0d8044b57a86eb53136f52ebd2120d3e682e2086",
+    "originalFormat": "pdf",
+    "originalBytes": 621949,
+    "retrieved": "2026-11-20T20:14:11.247Z",
+    "resolvedUrl": "https://www.sydney.edu.au/content/dam/corporate/documents/news-opinions/2024/external-review-bruce-hodgkinson-report-29112024.pdf"
   }
 };

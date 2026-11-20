@@ -285,6 +285,17 @@ window.globalRecords = {
       "quote": "Mazdoor Kisan Sangharh rally",
       "context": "The party’s central committee report recounts a 5 April 2023 rally in Delhi.",
       "type": "Party report"
+    },
+    {
+      "id": "EV-227",
+      "title": "Sydney review on encampment conduct and campus complaints",
+      "publisher": "External reviewer for the University of Sydney Senate",
+      "url": "https://www.sydney.edu.au/content/dam/corporate/documents/news-opinions/2024/external-review-bruce-hodgkinson-report-29112024.pdf",
+      "date": "2024-11",
+      "locator": "Background, printed page 8; Issues raised in the Review, printed pages 18–20",
+      "quote": "the encampment did not erupt into physical violence",
+      "context": "The reviewer described some verbal altercations and no eruption into physical violence at the encampment, and separately assessed submissions about antisemitic, Islamophobic and other campus behaviour.",
+      "type": "Commissioned external review"
     }
   ],
   "organisations": [
@@ -1734,6 +1745,35 @@ window.globalRecords = {
           "text": "Both publishers participated. Their records establish cooperation on this event. An ongoing international affiliation would require separate evidence."
         }
       ]
+    },
+    {
+      "id": "FN-205",
+      "title": "Sydney review describes conduct beyond the ending",
+      "summary": "The reviewer described verbal altercations at the encampment and also assessed complaints about campus behaviour during and after the protest period.",
+      "kind": "Fact",
+      "country": "Australia",
+      "countries": [
+        "AU"
+      ],
+      "date": "2024-11",
+      "sources": [
+        "EV-202",
+        "EV-227"
+      ],
+      "notes": [
+        {
+          "label": "Physical violence",
+          "text": "At printed page 8 the reviewer says minor verbal altercations occurred on a few occasions and the encampment did not erupt into physical violence. This is the reviewer’s account."
+        },
+        {
+          "label": "Complaints",
+          "text": "At printed pages 18–20 the reviewer discusses allegations and perceptions of antisemitic and Islamophobic behaviour, and says some speech was clearly antisemitic. The review groups submissions and does not adjudicate every incident individually."
+        },
+        {
+          "label": "Attribution",
+          "text": "The review covers the wider campus and protest-related events. It does not attribute every complaint to an identified encampment participant."
+        }
+      ]
     }
   ],
   "events": [
@@ -2738,6 +2778,36 @@ window.globalRecords = {
         {
           "label": "Limit",
           "text": "The publication documents the plan. It does not establish the number or outcome of events, or command relationships outside this initiative."
+        }
+      ]
+    },
+    {
+      "id": "AN-204",
+      "title": "Separate an event’s ending from conduct during it",
+      "summary": "The Sydney review records a peaceful ending and separately addresses altercations and complaints made about the broader protest period.",
+      "kind": "Evidence assessment",
+      "country": "Australia",
+      "countries": [
+        "AU"
+      ],
+      "date": "2024-11",
+      "sources": [
+        "EV-201",
+        "EV-202",
+        "EV-227"
+      ],
+      "notes": [
+        {
+          "label": "What the evidence says",
+          "text": "The reviewer describes a peaceful end on 24 June, some verbal altercations and no eruption into physical violence at the encampment, alongside complaints and findings about campus behaviour."
+        },
+        {
+          "label": "Interpretation",
+          "text": "The way an event ended does not determine the nature of every earlier incident. Each allegation and finding should be dated and attributed to its source."
+        },
+        {
+          "label": "Unknown",
+          "text": "The cited review does not adjudicate each submission or identify every person responsible."
         }
       ]
     }
