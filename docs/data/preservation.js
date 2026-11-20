@@ -108,6 +108,14 @@ window.preservation = {
     "retrieved": "2026-11-20T09:21:26.714Z",
     "resolvedUrl": "https://recht.nulegal.eu/rechtsprechung/bgh/2025-03-19/3-str-173-24-2"
   },
+  "EV-105": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-105.txt",
+    "format": "txt",
+    "sha256": "04de549dc6956768d63032517fd565d4c68988ee22bc3df88abb888fc678bb71",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
   "EV-201": {
     "label": "Quotation and source metadata",
     "path": "evidence/EV-201.txt",

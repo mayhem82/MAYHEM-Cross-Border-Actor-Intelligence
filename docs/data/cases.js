@@ -43,6 +43,17 @@ window.cases = {
       "quote": "Die Revision des Generalbundesanwalts ist unbegründet.",
       "context": "A second access copy of the same judgment as EV-102. Both records belong to one source authority.",
       "type": "Court text reproduction"
+    },
+    {
+      "id": "EV-105",
+      "title": "Italian Court of Cassation judgment 34782/2015",
+      "publisher": "Supreme Court of Cassation, reproduced by the Italian School for the Judiciary",
+      "url": "https://www.scuolamagistratura.it/documents/20126/43beff68-0cfe-586f-cb7a-8e2bc68c5191",
+      "date": "2015-04-30",
+      "locator": "Operative part, printed pages 20–21",
+      "quote": "Rigetta nel resto i ricorsi",
+      "context": "The court annulled one count for defective charging, dismissed the remaining appeals and recalculated the sentences of the two defendants.",
+      "type": "Court judgment"
     }
   ],
   "connections": [
@@ -161,6 +172,26 @@ window.cases = {
       "countries": [
         "DE"
       ]
+    },
+    {
+      "id": "TL-104",
+      "title": "Italian court decides Genoa attack appeals",
+      "summary": "The Court of Cassation annulled one count, rejected the remaining appeals and recalculated two sentences.",
+      "kind": "Court decision",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2015-04-30",
+      "sources": [
+        "EV-105"
+      ],
+      "notes": [
+        {
+          "label": "Proceeding",
+          "text": "Judgment 34782/2015 concerns Alfredo Cospito and Nicola Gai. The court’s reasoning and operative part explain the partial annulment."
+        }
+      ]
     }
   ],
   "judicial": [
@@ -240,6 +271,58 @@ window.cases = {
       ],
       "stage": "Sentence enforcement",
       "caseId": "3 StR 173/24"
+    },
+    {
+      "id": "J-104",
+      "title": "Alfredo Cospito appeal judgment",
+      "summary": "The court recalculated this defendant’s sentence to nine years, five months and ten days.",
+      "kind": "Court judgment",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2015-04-30",
+      "sources": [
+        "EV-105"
+      ],
+      "notes": [
+        {
+          "label": "Disposition",
+          "text": "The court annulled one count due to defective charging, while dismissing the remaining appeals. The stated term is the court’s 2015 recalculation."
+        },
+        {
+          "label": "Time boundary",
+          "text": "The judgment records the outcome at that date. It does not establish current custody or later sentences."
+        }
+      ],
+      "caseId": "Italian Court of Cassation 34782/2015",
+      "stage": "Conviction"
+    },
+    {
+      "id": "J-105",
+      "title": "Nicola Gai appeal judgment",
+      "summary": "The court recalculated this defendant’s sentence to eight years, eight months and twenty days.",
+      "kind": "Court judgment",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2015-04-30",
+      "sources": [
+        "EV-105"
+      ],
+      "notes": [
+        {
+          "label": "Disposition",
+          "text": "The court annulled one count due to defective charging, while dismissing the remaining appeals. The stated term is the court’s 2015 recalculation."
+        },
+        {
+          "label": "Time boundary",
+          "text": "The judgment records the outcome at that date. It does not establish current custody or later sentences."
+        }
+      ],
+      "caseId": "Italian Court of Cassation 34782/2015",
+      "stage": "Conviction"
     }
   ],
   "analyses": [
@@ -419,6 +502,62 @@ window.cases = {
         {
           "label": "Later enforcement",
           "text": "In May 2026 the court dismissed the prosecution challenge to the suspension of the remaining sentence on probation. Subsequent custody status is not established here."
+        }
+      ]
+    },
+    {
+      "id": "ACT-102",
+      "title": "Alfredo Cospito",
+      "summary": "The Italian Court of Cassation ruled on this defendant’s appeal concerning the 2012 Genoa attack.",
+      "kind": "Individual · conviction",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2015-04-30",
+      "sources": [
+        "EV-105"
+      ],
+      "notes": [
+        {
+          "label": "Court outcome",
+          "text": "The court annulled one count for defective charging, dismissed the remaining appeals and recalculated this defendant’s sentence to nine years, five months and ten days of imprisonment."
+        },
+        {
+          "label": "Conduct and affiliation",
+          "text": "The judgment describes the 7 May 2012 attack and says it was claimed in the name of the Informal Anarchist Federation / International Revolutionary Front (FAI-FRI)."
+        },
+        {
+          "label": "Limit",
+          "text": "The case does not establish paid travel to protests. Later legal developments and present status require additional records."
+        }
+      ]
+    },
+    {
+      "id": "ACT-103",
+      "title": "Nicola Gai",
+      "summary": "The Italian Court of Cassation ruled on this defendant’s appeal concerning the 2012 Genoa attack.",
+      "kind": "Individual · conviction",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2015-04-30",
+      "sources": [
+        "EV-105"
+      ],
+      "notes": [
+        {
+          "label": "Court outcome",
+          "text": "The court annulled one count for defective charging, dismissed the remaining appeals and recalculated this defendant’s sentence to eight years, eight months and twenty days of imprisonment."
+        },
+        {
+          "label": "Conduct and affiliation",
+          "text": "The judgment describes the 7 May 2012 attack and says it was claimed in the name of the Informal Anarchist Federation / International Revolutionary Front (FAI-FRI)."
+        },
+        {
+          "label": "Limit",
+          "text": "The case does not establish paid travel to protests. Later legal developments and present status require additional records."
         }
       ]
     }

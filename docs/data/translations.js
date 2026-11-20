@@ -128,5 +128,8 @@ window.translations = {
   },
   "ORG-430": {
     "title": "Uruguayan Committee for Support of the Palestinian People"
+  },
+  "EV-105": {
+    "quote": "It dismisses the remaining appeals"
   }
 };
