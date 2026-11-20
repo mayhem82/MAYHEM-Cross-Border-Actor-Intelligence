@@ -1,0 +1,179 @@
+(function app(){
+'use strict';
+const $ = selector => document.querySelector(selector);
+const safe = value => String(value ?? '').replace(/[&<>"']/g, ch => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[ch]));
+const icons = {
+ dashboard:'<rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/>',
+ network:'<circle cx="5" cy="12" r="3"/><circle cx="18" cy="5" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8 11 7-5M8 13l7 5"/>',
+ org:'<circle cx="9" cy="8" r="3"/><path d="M3 20v-2c0-6 12-6 12 0v2M16 5a3 3 0 0 1 0 6m2 3c2 .5 3 2 3 5"/>',
+ scale:'<path d="M12 3v17M6 21h12M3 7l9-2 9 2M5 7l-3 7h6L5 7Zm14 0-3 7h6l-3-7Z"/>',
+ timeline:'<path d="M5 3v18M10 5h9M10 12h6M10 19h9"/><circle cx="5" cy="5" r="1.4"/><circle cx="5" cy="12" r="1.4"/><circle cx="5" cy="19" r="1.4"/>',
+ analysis:'<path d="M3 19h18M5 15l4-7 4 5 6-9"/><circle cx="19" cy="4" r="1.3"/>',
+ archive:'<rect x="3" y="4" width="18" height="5" rx="1"/><path d="M5 9v11h14V9M10 13h4"/>',
+ check:'<path d="m6 12 4 4 8-9"/><circle cx="12" cy="12" r="9"/>',
+ source:'<path d="M5 3h9l5 5v13H5zM14 3v6h5M8 13h8m-8 4h6"/>',
+ method:'<path d="m12 4 8 3v5c0 4-4 7-8 9-4-2-8-5-8-9V7l8-3Z"/><path d="m8.5 12 2.5 2.5 4.5-5"/>',
+ search:'<circle cx="10" cy="10" r="6.5"/><path d="m15 15 5 5"/>',
+ menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',
+ globe:'<circle cx="12" cy="12" r="9"/><ellipse cx="12" cy="12" rx="4" ry="9"/><path d="M3 12h18"/>',
+ chevron:'<path d="m9 6 6 6-6 6"/>', book:'<path d="M3 5c4-1 7 0 9 2 2-2 5-3 9-2v14c-4-1-7 0-9 2-2-2-5-3-9-2ZM12 7v14"/>',
+ question:'<circle cx="12" cy="12" r="9"/><path d="M9.5 9a2.7 2.7 0 1 1 4.2 2.3c-1.3.8-1.7 1.2-1.7 2.7m0 2.5v.5"/>',
+ folder:'<path d="M3 6h7l2 3h9v11H3z"/>', filter:'<path d="M3 6h18M6 12h12M9 18h6"/>',
+ ext:'<path d="M14 4h6v6m0-6-10 10M10 5H5v15h15v-6"/>', layers:'<path d="m12 3 9 5-9 5-9-5 9-5Zm-8 10 8 5 8-5M4 17l8 5 8-5"/>'
+};
+function icon(key,size=18){return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[key]||icons.source}</svg>`;}
+const pages = {
+ dashboard:['Dashboard','dashboard'], organisations:['Organisation register','org','Named organisations, their declared objectives, governance and documented activities.'],
+ network:['Network map','network','Explore documented relationships across borders. Select a layer to see its evidence and time period.'],
+ judicial:['Judicial register','scale','Arrest and court records by proceeding. Read each disposition alongside the conduct and count it concerns.'],
+ timeline:['Incident timeline','timeline','Demonstrations, organisational developments and judicial decisions in date order.'],
+ analyses:['Behavioural analysis','analysis','Compare documented mechanisms, alternative explanations and the evidence still needed to distinguish them.'],
+ sources:['Evidence archive','archive','Inspect the source, preserved quotation, date and classification behind each record.'],
+ method:['Methodology','method'],findings:['Findings','check','Source-backed findings with their evidentiary limits.'],
+ questions:['Unresolved questions','question','Open questions and the records needed to resolve them.'],
+ investigations:['Active investigations','folder','Open lines of inquiry and the evidence reviewed so far.']
+};
+const navGroups = [['Investigation',['dashboard','network','timeline']],['Registers',['organisations','judicial','sources']],['Research',['analyses','method']]];
+const categoryPages = {organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
+const data = {}, records = new Map();
+for(const key of Object.keys(categoryPages)){
+ data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[])];
+ for(const row of data[key]) records.set(row.id,{...row,section:categoryPages[key],category:key});
+}
+const capture = window.preservation || {};
+const revision = '20 November 2026';
+const sourceUrl = 'https://github.com/mayhem82/MAYHEM-Cross-Border-Actor-Intelligence';
+const fmtDate = (s,short=false) => !s ? 'Undated' : s.length===4 ? s : new Intl.DateTimeFormat('en-GB',{day:'numeric',month:short?'short':'long',year:'numeric',timeZone:'UTC'}).format(new Date(s+'T00:00:00Z'));
+const link = row => `#record/${encodeURIComponent(row.id)}`;
+const typeOf = row => row.kind || row.type || '';
+const meta = row => [row.country||row.publisher, row.date ? fmtDate(row.date,true) : ''].filter(Boolean).map(safe).join(' <span class="sep">·</span> ');
+const tag = (word,style='') => `<span class="tag ${style}">${safe(word)}</span>`;
+const node = $('#content');
+let currentView = '', currentLayer = 'membership', sectionFilter = '', localQuery = '';
+const searchDialog = $('#lookup');
+$('#menu').innerHTML=icon('menu',22);
+$('#openSearch').innerHTML=icon('search',17)+'<span>Search records</span><kbd>/</kbd>';
+$('#nav').innerHTML=navGroups.map(([name,sections])=>`<div class="navGroup"><p>${name}</p>${sections.map(id=>`<a href="#${id}" data-page="${id}">${icon(pages[id][1])}<span>${pages[id][0]}</span></a>`).join('')}</div>`).join('');
+const positions = {IE:[81,182,'Ireland',-10,-17],BE:[262,242,'Belgium',14,0],FR:[227,324,'France',11,18],IT:[366,411,'Italy',-10,-18],GR:[513,510,'Greece',15,3]};
+function mapGraphic(layer,hero=false){
+ const edges=data.connections.filter(row=>row.layer===layer);
+ const active=[...new Set(edges.flatMap(row=>[row.from,row.to]))];
+ const view = hero ? '-90 75 640 345' : layer==='membership' ? '-80 45 635 420':'130 210 590 395';
+ const id=hero?'h':'n';
+ const routes=edges.map(row=>{
+  const a=positions[row.from], b=positions[row.to]; if(!a||!b)return '';
+  const cx=(a[0]+b[0])/2+8, cy=Math.min(a[1],b[1])-Math.abs(a[0]-b[0])*.31-12;
+  const path=`M${a[0]} ${a[1]} Q${cx} ${cy} ${b[0]} ${b[1]}`;
+  return `<a href="${link(row)}" aria-label="${safe(row.title)}"><title>${safe(row.title)}</title><path class="mapHit" d="${path}"/><path class="routeLine" ${layer==='historical'?'stroke-dasharray="6 4"':''} d="${path}"/></a>`;
+ }).join('');
+ const markers=active.filter(code=>positions[code]).map(code=>{
+  const [x,y,name,dx,dy]=positions[code];
+  return `<g class="marker" transform="translate(${x} ${y})"><circle r="11" class="halo"/><circle r="4.5" class="pin"/><text x="${dx}" y="${dy}" text-anchor="${dx<0?'end':'start'}">${name}</text></g>`;
+ }).join('');
+ return `<svg class="geo" viewBox="${view}" role="img" aria-label="${layer==='historical'?'Historical prosecutorial account connecting Italy and Greece':'Declared organisational memberships linking Ireland and France with Belgium'}">
+ <defs><pattern id="dots${id}" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#354943"/><circle cx="1.5" cy="1.5" r=".7" fill="#677b71"/></pattern><pattern id="grid${id}" width="72" height="58" patternUnits="userSpaceOnUse"><path d="M72 0H0V58" fill="none" stroke="#8ca69b" stroke-width=".7" opacity=".42"/></pattern></defs>
+ <rect x="-200" y="-600" width="1800" height="2300" fill="#1c2d29"/>
+ <g fill="url(#dots${id})" stroke="#819087" stroke-width=".68" stroke-linejoin="round">${window.europeOutlines.map(([,d])=>`<path d="${d}"/>`).join('')}</g>
+ <rect x="-200" y="-600" width="1800" height="2300" fill="url(#grid${id})"/>
+ ${routes}${markers}</svg>`;
+}
+function dashStat(title,value,page,ic,color){return `<a class="stat" href="#${page}"><div class="statTitle"><span class="tileIcon ${color}">${icon(ic,17)}</span><span>${title}</span></div><strong>${value}</strong></a>`;}
+function panelHead(title,page,text){return `<div class="panelHead"><h2>${title}</h2><a href="#${page}">${text||'View all'}</a></div>`;}
+function findRow(row){
+ return `<a href="${link(row)}" class="findRow"><div class="rowCaption">${tag(row.kind||'Fact','green')}<span>${safe(row.id)}</span></div><h3>${safe(row.title)}</h3><p>${meta(row)}</p></a>`;
+}
+const byDate = rows => [...rows].sort((a,b)=>(b.date||'').localeCompare(a.date||'')||a.id.localeCompare(b.id));
+function timelineRow(row){
+ return `<a class="timelineItem" href="${link(row)}"><span class="timeMark"></span><time>${safe(fmtDate(row.date,true))}</time><strong>${safe(row.title)}</strong><small>${safe(row.country)}</small></a>`;
+}
+function dashboard(){
+ const lead=[data.findings.find(r=>r.country?.includes('Germany')),data.findings.find(r=>r.sources.some(s=>s.startsWith('EV-0'))),...data.findings].filter((r,i,all)=>r && all.findIndex(x=>x?.id===r.id)===i).slice(0,3);
+ return `<section class="hero"><div class="heroMap">${mapGraphic('membership',true)}</div><div class="heroText"><div class="heroKicker"><span></span>European investigation</div><h1>Cross-border<br>protest networks</h1><p>Evidence-led analysis of European protest movements, organisational ties and judicial records.</p><a class="heroButton" href="#network">${icon('network',16)}Explore network map</a></div><div class="mapLegend"><i></i>Declared membership</div></section>
+ <div class="overviewLine"><h2>Investigation overview</h2><span>Recorded ${revision}</span></div>
+ <div class="stats">${dashStat('Verified findings',data.findings.filter(r=>/^fact$/i.test(r.kind)).length,'findings','check','green')}${dashStat('Organisations',data.organisations.length,'organisations','org','blue')}${dashStat('Judicial cases',new Set(data.judicial.map(r=>r.caseId)).size,'judicial','scale','amber')}${dashStat('Evidence sources',data.sources.length,'sources','archive','purple')}</div>
+ <div class="dashGrid"><section class="panel">${panelHead('Selected findings','findings','All findings')}${lead.map(findRow).join('')}</section><section class="panel">${panelHead('Incident timeline','timeline','Full timeline')}<div class="miniTimeline">${byDate(data.events).slice(0,3).map(timelineRow).join('')}</div></section></div>
+ <div class="dashGrid lowerGrid"><section class="panel">${panelHead('Active investigations','investigations')}${data.investigations.map(compactRow).join('')}</section><section class="panel">${panelHead('Unresolved questions','questions')}${data.questions.slice(0,3).map(compactRow).join('')}</section></div>`;
+}
+function compactRow(row){return `<a class="compact" href="${link(row)}"><small>${safe(row.id)} · ${safe(typeOf(row))}</small><strong>${safe(row.title)}</strong></a>`;}
+function titleBlock(section){const p=pages[section];return `<div class="pageIntro"><div class="kicker">${icon(p[1],16)}European investigation</div><h1>${p[0]}</h1><p>${p[2]||''}</p></div>`;}
+function listRows(section){
+ let rows=data[Object.keys(categoryPages).find(k=>categoryPages[k]===section)]||[];
+ return section==='timeline'||section==='judicial'?byDate(rows):rows;
+}
+function searchText(row){return [row.id,row.title,row.summary,row.kind,row.stage,row.short,row.country,row.date,row.publisher,row.type,row.locator,row.quote,row.context,...(row.sources||[]),...(row.notes||[]).map(n=>n.text)].filter(Boolean).join(' ').toLowerCase();}
+function listItems(section){
+ const list=listRows(section).filter(r=>(!sectionFilter || (section==='judicial'?r.stage:typeOf(r))===sectionFilter)&&searchText(r).includes(localQuery.toLowerCase()));
+ return `<p class="countLine" role="status">${list.length} ${list.length===1?'record':'records'}</p>${list.length ? `<div class="${section==='timeline'?'longTimeline':'recordList'}">${list.map(row=>section==='timeline'?timelineRow(row):`<a class="listCard" href="${link(row)}"><div class="listIcon">${icon(pages[section][1],22)}</div><div><div class="rowCaption"><span>${safe(row.id)}</span>${tag(section==='judicial'?row.stage:typeOf(row),row.kind==='Fact'?'green':'')}</div><h2>${safe(row.title)}</h2><p>${safe(row.summary||row.context)}</p><small>${meta(row)}</small></div>${icon('chevron',16)}</a>`).join('')}</div>`:`<div class="empty">No matching records. <button data-reset>Clear filters</button></div>`}`;
+}
+function listing(section){
+ const choices=[...new Set(listRows(section).map(r=>section==='judicial'?r.stage:typeOf(r)).filter(Boolean))];
+ if(section==='judicial')for(const c of ['Arrest','Charge','Conviction','Acquittal','Repeat offender'])if(!choices.includes(c))choices.push(c);
+ return `${titleBlock(section)}<div class="tools"><label class="fieldSearch">${icon('search')}<input id="localQuery" type="search" placeholder="Filter records" aria-label="Filter these records"></label><label class="selectBox">${icon('filter')}<select aria-label="Filter by record type" id="kindFilter"><option value="">All ${section==='judicial'?'stages':'types'}</option>${choices.map(c=>`<option>${safe(c)}</option>`).join('')}</select></label></div><div id="listArea">${listItems(section)}</div>`;
+}
+function network(){
+ const historical=currentLayer==='historical';
+ return `${titleBlock('network')}<div role="group" aria-label="Relationship layer" class="switcher"><button data-layer="membership" aria-pressed="${!historical}">Declared membership</button><button data-layer="historical" aria-pressed="${historical}">Historical account</button></div>
+ <div class="mapPanel">${mapGraphic(currentLayer)}<div class="mapLegend"><i></i>${historical?'Reported collaboration · 2011':'Declared membership'}</div></div><div class="mapNote"><span>Markers represent countries. Select a relationship below for its sources.</span><a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></div>
+ <section class="panel connectionPanel"><div class="panelHead"><h2>${historical?'Reported historical relationship':'Documented memberships'}</h2></div>${data.connections.filter(r=>r.layer===currentLayer).map(compactRow).join('')}</section>`;
+}
+function methodology(){
+ return `<div class="pageIntro"><div class="kicker">${icon('method',16)}Research</div><h1>Evidence methodology</h1><p>How MAYHEM records a claim, tests competing explanations and preserves the material behind it.</p></div><section class="reading panel">
+ <h2>Scope and attribution</h2><p>This investigation covers European far-left and anarchist activity and relevant anti-Israel and Palestine solidarity mobilisation. Right-wing movements are outside its scope. Inclusion records the activity described in a source. Any finding of criminality, extremism or hatred requires specific evidence about the actor and conduct concerned.</p>
+ <h2>Factualism</h2><dl><dt>Fact</dt><dd>A directly supported proposition. An organisation’s declaration establishes what it said. A judgment establishes what the court decided on specific counts.</dd><dt>Inference</dt><dd>An interpretation drawn from cited facts. Each analysis states the limits of that interpretation and considers alternatives.</dd><dt>Unknown</dt><dd>A question the available records leave open. The register identifies the evidence needed to resolve it.</dd></dl>
+ <h2>DFAPTI evidence preservation</h2><p>Each source has a stable identifier, authority, source date, locator, short quotation and recording date. The archive identifies the preserved material and its SHA-256 checksum. A full-document capture and an excerpt have different evidentiary reach.</p>
+ <h2>DFAPTA all-paths analysis</h2><p>For each question, consider explanations that fit the record, evidence that weighs against each, and the material needed to decide between them. A shared date, public slogan or campaign objective alone leaves central direction unresolved. Judicial findings are confined to their case.</p><p>This edition remains open for evidence intake. Its behavioural entries are working interpretations. Formal DFAPTA review begins when the operator freezes a defined evidence set.</p>
+ <h2>Discrepancies and corrections</h2><p>Keep source accounts in their original terms. Attribute attendance estimates and distinguish an estimate from an independently verified count. A correction receives a new evidence ID and references the earlier entry. The source files and revision history are public.</p><p><a href="${sourceUrl}/commits/main/">Revision history</a> · <a href="https://github.com/mayhem82/mayhem-investigations/blob/main/SPEC.md">MAYHEM specification</a></p></section>`;
+}
+function sourceDetail(row){
+ const archive=capture[row.id];
+ return `<div class="detailCols"><section class="panel reading"><h2>Preserved quotation</h2><blockquote>${safe(row.quote)}</blockquote><p class="sourceLoc">${safe(row.locator)}</p><h2>What the source establishes</h2><p>${safe(row.context)}</p><a class="primaryLink" href="${safe(row.url)}">Open original source ${icon('ext',15)}</a></section><aside class="panel reading factsBox"><h2>Archive record</h2><dl><dt>Source authority</dt><dd>${safe(row.publisher)}</dd><dt>Source date</dt><dd>${fmtDate(row.date)}</dd><dt>Recorded</dt><dd>${revision}</dd><dt>Evidence class</dt><dd>${safe(row.type)}</dd>${archive?`<dt>Preservation</dt><dd>${safe(archive.label)}</dd><dt>Local copy</dt><dd><a href="./${safe(archive.path)}">Open preserved ${archive.format==='pdf'?'document':'excerpt'}</a></dd><dt>Excerpt SHA-256</dt><dd class="hash">${safe(archive.sha256)}</dd>${archive.originalSha256?`<dt>Original source capture</dt><dd>${safe(archive.originalFormat.toUpperCase())} · ${safe(archive.originalBytes.toLocaleString())} bytes · ${safe(archive.retrieved.slice(0,10))}</dd><dt>Original SHA-256</dt><dd class="hash">${safe(archive.originalSha256)}</dd>${archive.documentPath?`<dd><a href="./${safe(archive.documentPath)}">Open preserved PDF</a></dd>`:""}`:`<dt>Original source capture</dt><dd>${safe(archive.captureNote)}</dd>`}`:''}</dl></aside></div><section class="panel related"><div class="panelHead"><h2>Records citing this source</h2></div>${[...records.values()].filter(r=>r.sources?.includes(row.id)).map(compactRow).join('')}</section>`;
+}
+function detail(row){
+ const source=row.category==='sources';
+ return `<div class="detailTop"><a class="back" href="#${row.section}">‹ &nbsp; ${pages[row.section][0]}</a><div class="rowCaption">${tag(typeOf(row),row.kind==='Fact'?'green':'')}<span>${safe(row.id)}</span></div><h1>${safe(row.title)}</h1>${row.summary?`<p>${safe(row.summary)}</p>`:''}<small>${meta(row)}</small></div>${source?sourceDetail(row):`<div class="detailCols"><section class="panel reading"><h2>Record details</h2>${(row.notes||[]).map(n=>`<h3>${safe(n.label)}</h3><p>${safe(n.text)}</p>`).join('')}${row.caseId?`<h3>Proceeding</h3><p>${safe(row.caseId)} · ${safe(row.stage)}</p>`:''}</section><aside class="panel"><div class="panelHead"><h2>Supporting evidence</h2></div>${row.sources.map(id=>records.get(id)).filter(Boolean).map(s=>`<a class="compact" href="${link(s)}"><small>${safe(s.id)} · ${safe(s.type)}</small><strong>${safe(s.title)}</strong><span>${safe(s.publisher)}</span></a>`).join('')}</aside></div>`}`;
+}
+function closeMenu(){document.body.classList.remove('menuOpen');$('#menu').setAttribute('aria-expanded','false');$('#scrim').hidden=true;}
+function render(focus=false){
+ const route=location.hash.slice(1)||'dashboard';
+ const row=route.startsWith('record/')?records.get(route.slice(7)):null;
+ currentView=row?row.section:route;
+ closeMenu();
+ sectionFilter=''; localQuery='';
+ const valid=Object.hasOwn(pages,currentView);
+ const label=valid?pages[currentView][0]:'Record unavailable';
+ $('#breadcrumb').textContent=label;
+ document.title=(row?row.title:label)+' · MAYHEM';
+ document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===currentView||a.dataset.page==='dashboard'&&['questions','investigations','findings'].includes(currentView))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
+ node.innerHTML=row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='method'?methodology():listing(currentView);
+ if(focus){node.focus({preventScroll:true});window.scrollTo(0,0);}
+}
+function drawResults(){
+ const q=$('#query').value.trim().toLowerCase();
+ if(!q){$('#results').innerHTML='<p class="searchHint">Enter a title, country or evidence ID to find a record.</p>';return;}
+ const matches=[...records.values()].filter(row=>searchText(row).includes(q));
+ $('#results').innerHTML=`<p class="searchHint">${matches.length} ${matches.length===1?'match':'matches'}</p>${matches.map(r=>`<a class="compact" href="${link(r)}"><small>${pages[r.section][0]} · ${safe(r.id)}</small><strong>${safe(r.title)}</strong></a>`).join('')}`;
+}
+function openSearch(){closeMenu();$('#query').value='';drawResults();searchDialog.showModal();$('#query').focus();}
+$('#openSearch').onclick=openSearch;
+$('[data-close]').onclick=()=>searchDialog.close();
+$('#results').onclick=e=>{if(e.target.closest('a'))searchDialog.close();};
+searchDialog.addEventListener('click',e=>{if(e.target===searchDialog)searchDialog.close();});
+$('#query').oninput=drawResults;
+$('#menu').onclick=()=>{if(document.body.classList.contains('menuOpen'))closeMenu();else{document.body.classList.add('menuOpen');$('#scrim').hidden=false;$('#menu').setAttribute('aria-expanded','true');$('#sidebar .brand').focus();}};
+$('#scrim').onclick=closeMenu;
+$('#nav').onclick=closeMenu;
+document.addEventListener('keydown',e=>{
+ if(e.key==='Escape')closeMenu();
+ if(e.key==='/'&&!searchDialog.open&&!/INPUT|TEXTAREA|SELECT/.test(document.activeElement.tagName)){e.preventDefault();openSearch();}
+});
+document.addEventListener('click',e=>{
+ const layer=e.target.closest('[data-layer]');
+ if(layer){currentLayer=layer.dataset.layer;node.innerHTML=network();node.querySelector(`[data-layer="${currentLayer}"]`).focus();}
+ if(e.target.closest('[data-reset]')){localQuery=sectionFilter='';$('#localQuery').value='';$('#kindFilter').value='';$('#listArea').innerHTML=listItems(currentView);$('#localQuery').focus();}
+ if(e.target.closest('.skip')){e.preventDefault();node.focus();}
+});
+document.addEventListener('input',e=>{if(e.target.id==='localQuery'){localQuery=e.target.value;$('#listArea').innerHTML=listItems(currentView);}});
+document.addEventListener('change',e=>{if(e.target.id==='kindFilter'){sectionFilter=e.target.value;$('#listArea').innerHTML=listItems(currentView);}});
+addEventListener('hashchange',()=>render(true));
+render();
+})();
