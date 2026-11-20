@@ -24,6 +24,7 @@ const icons = {
 function icon(key,size=18){return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[key]||icons.source}</svg>`;}
 const pages = {
  dashboard:['Dashboard','dashboard'], actors:['Individual actors','org','People documented in public records, with the conduct and procedural outcome identified for each individual.'], organisations:['Organisation register','org','Named organisations, their declared objectives, governance and documented activities.'],
+ atlas:['Pattern Explorer','layers','Explore the evidence connecting records across the investigation.'],
  network:['Network map','network','Explore documented relationships across borders. Select a layer to see its evidence and time period.'],
  judicial:['Judicial register','scale','Arrest and court records by proceeding. Read each disposition alongside the conduct and count it concerns.'],
  timeline:['Incident timeline','timeline','The current record spans 1986–2026. Demonstrations, organisational developments and judicial decisions appear in date order.'],
@@ -33,7 +34,7 @@ const pages = {
  questions:['Unresolved questions','question','Open questions and the records needed to resolve them.'],
  investigations:['Active investigations','folder','Open lines of inquiry and the evidence reviewed so far.']
 };
-const navGroups = [['Investigation',['dashboard','network','timeline']],['Registers',['organisations','actors','judicial','sources']],['Research',['analyses','method']]];
+const navGroups = [['Investigation',['dashboard','network','atlas','timeline']],['Registers',['organisations','actors','judicial','sources']],['Research',['analyses','method']]];
 const categoryPages = {actors:'actors',organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
 const data = {}, records = new Map();
 for(const key of Object.keys(categoryPages)){
@@ -63,6 +64,7 @@ const typeOf = row => row.kind || row.type || '';
 const meta = row => [row.country||row.publisher, row.date ? fmtDate(row.date,true) : ''].filter(Boolean).map(safe).join(' <span class="sep">·</span> ');
 const tag = (word,style='') => `<span class="tag ${style}">${safe(word)}</span>`;
 const node = $('#content');
+let currentAtlas = 'EV-105';
 let currentView = '', currentLayer = 'coverage', sectionFilter = '', localQuery = '';
 const searchDialog = $('#lookup');
 $('#menu').innerHTML=icon('menu',22);
@@ -121,6 +123,16 @@ function network(){
  return `${titleBlock('network')}<div role="group" aria-label="Map layer" class="switcher">${Object.entries(layers).map(([key,label])=>`<button data-layer="${key}" aria-pressed="${key===currentLayer}">${label}</button>`).join('')}</div>
  <div class="mapPanel">${mapGraphic(currentLayer)}<div class="mapLegend"><i></i>${layers[currentLayer]}</div></div><div class="mapNote"><span>${currentLayer==='coverage'?'Select a country or territory to read its records. Unmarked areas have no indexed entry in this edition.':'Each line represents the relationship described by the selected evidence layer.'}</span><a href="https://www.naturalearthdata.com/about/terms-of-use/">Natural Earth</a></div>${list}`;
 }
+function lattice(){
+ const sources=[...data.sources].sort((a,b)=>a.id.localeCompare(b.id));
+ const source=records.get(currentAtlas) || sources.find(row=>row.id==='EV-105') || sources[0];
+ if(!source)return `${titleBlock('atlas')}<div class="empty">No evidence records are available.</div>`;
+ const linked=[...records.values()].filter(row=>row.sources?.includes(source.id)).sort((a,b)=>a.category.localeCompare(b.category)||a.title.localeCompare(b.title));
+ const height=Math.max(160,linked.length*58+40);
+ const trunc=s=>s.length>48?s.slice(0,45)+'…':s;
+ const branches=linked.map((row,i)=>{const y=50+i*58;return `<path d="M225 ${height/2} C310 ${height/2} 300 ${y} 370 ${y}" class="atlasLine"/><a href="${link(row)}"><rect x="370" y="${y-20}" width="390" height="42" rx="6" class="atlasNode"/><text x="383" y="${y-2}" class="atlasType">${safe(pages[row.section][0])} · ${safe(row.id)}</text><text x="383" y="${y+14}" class="atlasTitle">${safe(trunc(row.title))}</text><title>${safe(row.title)}</title></a>`;}).join('');
+ return `${titleBlock('atlas')}<div class="tools"><label for="atlasSource">Evidence source</label><label class="selectBox"><select id="atlasSource" aria-label="Evidence source">${sources.map(row=>`<option value="${safe(row.id)}" ${row.id===source.id?'selected':''}>${safe(row.id+' · '+row.title)}</option>`).join('')}</select></label></div><p class="atlasHelp">Lines show records that cite the selected source. Open a record to inspect what the evidence supports.</p><div class="atlasViewport"><svg viewBox="0 0 785 ${height}" role="img" aria-label="Evidence ${safe(source.id)} and ${linked.length} citing records"><rect x="15" y="${height/2-26}" width="210" height="52" rx="6" class="atlasSource"/><a href="${link(source)}"><text x="27" y="${height/2-5}" class="atlasSourceId">${safe(source.id)} · Evidence</text><text x="27" y="${height/2+14}" class="atlasSourceText">${safe(source.title.length>26?source.title.slice(0,25)+'…':source.title)}</text><title>${safe(source.title)}</title></a>${branches}</svg></div><section class="panel atlasRecords"><div class="panelHead"><h2>Records citing ${safe(source.id)}</h2><a href="${link(source)}">Open evidence</a></div>${linked.length?linked.map(compactRow).join(''):'<p class="empty">No records cite this source yet.</p>'}</section>`;
+}
 function methodology(){
  return `<div class="pageIntro"><div class="kicker">${icon('method',16)}Research</div><h1>Evidence methodology</h1><p>How the investigation records a claim, tests competing explanations and preserves the material behind it.</p></div><section class="reading panel">
  <h2>Scope and attribution</h2><p>This investigation covers socialist, communist, far-left and anarchist movements and relevant anti-Israel and Palestine solidarity mobilisation worldwide. The register starts with sourced records from Africa, Asia, Europe, North America, South America and Oceania. Country coverage grows as records are verified. Right-wing movements are outside its scope. Inclusion records the activity described in a source. Any finding of criminality, extremism or hatred requires specific evidence about the actor and conduct concerned.</p>
@@ -141,9 +153,11 @@ function closeMenu(){document.body.classList.remove('menuOpen');$('#menu').setAt
 function render(focus=false){
  const route=location.hash.slice(1)||'dashboard';
  const row=route.startsWith('record/')?records.get(route.slice(7)):null;
+ const atlasId=route.startsWith('atlas/')?route.slice(6):'';
+ if(atlasId && records.get(atlasId)?.category==='sources')currentAtlas=atlasId;
  const code=route.startsWith('country/')?route.slice(8):'';
  const country=Object.hasOwn(window.worldPlaces,code)?window.worldPlaces[code]:null;
- currentView=country?'network':row?row.section:route;
+ currentView=country?'network':atlasId?'atlas':row?row.section:route;
  closeMenu();
  sectionFilter=''; localQuery='';
  const valid=Object.hasOwn(pages,currentView);
@@ -151,7 +165,7 @@ function render(focus=false){
  $('#breadcrumb').textContent=label;
  document.title=(country?country.name:row?row.title:label)+' · Cross-Border Protest Networks';
  document.querySelectorAll('[data-page]').forEach(a=>{if(a.dataset.page===currentView||a.dataset.page==='dashboard'&&['questions','investigations','findings'].includes(currentView))a.setAttribute('aria-current','page');else a.removeAttribute('aria-current');});
- node.innerHTML=country?countryBrowse(code):row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='method'?methodology():listing(currentView);
+ node.innerHTML=country?countryBrowse(code):row?detail(row):!valid?'<div class="pageIntro"><h1>Record unavailable</h1><p>This link does not identify a published record.</p><a href="#dashboard">Return to dashboard</a></div>':currentView==='dashboard'?dashboard():currentView==='network'?network():currentView==='atlas'?lattice():currentView==='method'?methodology():listing(currentView);
  if(focus){node.focus({preventScroll:true});window.scrollTo(0,0);}
 }
 function drawResults(){
@@ -180,7 +194,7 @@ document.addEventListener('click',e=>{
  if(e.target.closest('.skip')){e.preventDefault();node.focus();}
 });
 document.addEventListener('input',e=>{if(e.target.id==='localQuery'){localQuery=e.target.value;$('#listArea').innerHTML=listItems(currentView);}});
-document.addEventListener('change',e=>{if(e.target.id==='kindFilter'){sectionFilter=e.target.value;$('#listArea').innerHTML=listItems(currentView);}});
+document.addEventListener('change',e=>{if(e.target.id==='atlasSource'){location.hash='atlas/'+encodeURIComponent(e.target.value);return;}if(e.target.id==='kindFilter'){sectionFilter=e.target.value;$('#listArea').innerHTML=listItems(currentView);}});
 addEventListener('hashchange',()=>render(true));
 render();
 })();
