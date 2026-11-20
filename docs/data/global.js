@@ -362,6 +362,47 @@ window.globalRecords = {
       "quote": "people demonstrated in London's Trafalgar Square on May 20, 2006",
       "context": "The paper reports separate demonstrations on 20 May 2006 in London and Newcastle.",
       "type": "Party newspaper report"
+    },
+    {
+      "id": "EV-234",
+      "title": "Independent reporting on the UCLA encampment attack",
+      "publisher": "Unicorn Riot",
+      "url": "https://unicornriot.ninja/2024/masked-israel-supporters-attack-uclas-palestine-solidarity-encampment-with-weapons/",
+      "date": "2024-05-01",
+      "locator": "Opening report and paragraph linking William Gude’s livestream",
+      "quote": "Watch a live stream from independent journalist William Gude",
+      "context": "The independent outlet reported violence at the UCLA encampment and linked a livestream by William Gude. Its account describes the attackers and the reported conduct.",
+      "type": "Independent journalism"
+    },
+    {
+      "id": "EV-235",
+      "title": "UCLA livestream identified by independent report",
+      "publisher": "William Gude / Film The Police LA, as identified by Unicorn Riot",
+      "url": "https://www.youtube.com/watch?v=ZVEHoNAR9lo",
+      "date": "2024-05-01",
+      "locator": "Unicorn Riot report identifies and embeds “ATTACK AT UCLA — LIVESTREAM”",
+      "quote": "ATTACK AT UCLA — LIVESTREAM",
+      "context": "A linked livestream is identified by an independent report. The recording could not be viewed directly during this evidence pass and its precise contents, timecodes and completeness remain unverified.",
+      "type": "Video lead",
+      "footage": {
+        "creator": "William Gude / Film The Police LA, as identified by Unicorn Riot",
+        "recorded": "Reported as the night of 30 April–1 May 2024. Exact recording time unverified.",
+        "location": "UCLA, Los Angeles, as reported by the article. Independent verification of the recording is pending.",
+        "timecode": "Unknown. The recording could not be viewed during this pass.",
+        "verification": "Lead only. Creator, location, time and individual acts in the video have not been independently verified.",
+        "context": "The report links an embedded livestream. The preserved source capture is the HTML page, not the video recording. Completeness, editing and surrounding footage remain unknown."
+      }
+    },
+    {
+      "id": "EV-236",
+      "title": "UCLA statement following attack on encampment",
+      "publisher": "University of California, Los Angeles",
+      "url": "https://newsroom.ucla.edu/condemning-violence-in-our-community",
+      "date": "2024-05-01",
+      "locator": "Chancellor’s statement, opening paragraphs",
+      "quote": "Physical violence ensued",
+      "context": "The university reported that a group attacked its Palestine solidarity encampment on the previous night and stated it was investigating.",
+      "type": "University statement"
     }
   ],
   "organisations": [
@@ -2919,6 +2960,36 @@ window.globalRecords = {
         {
           "label": "Attribution",
           "text": "The source is a political organisation’s account. Its attendance estimate is attributed to that source or the named organisers and has not been independently verified in this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-335",
+      "title": "Violent attack on UCLA encampment",
+      "summary": "An independent report and UCLA both reported a violent attack on the Palestine solidarity encampment.",
+      "kind": "Demonstration and reported attack",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2024-04-30",
+      "sources": [
+        "EV-234",
+        "EV-235",
+        "EV-236"
+      ],
+      "notes": [
+        {
+          "label": "Independent reporting",
+          "text": "Unicorn Riot reported an attack and linked a livestream attributed to independent journalist William Gude."
+        },
+        {
+          "label": "University account",
+          "text": "UCLA reported that a group attacked the encampment and that physical violence ensued. Its statement said an investigation would be conducted."
+        },
+        {
+          "label": "Video verification",
+          "text": "The linked livestream is recorded as a lead. It was not directly viewed during this pass, so no clip-specific timing or conduct is independently verified."
         }
       ]
     }

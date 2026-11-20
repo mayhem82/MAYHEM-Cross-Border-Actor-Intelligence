@@ -551,5 +551,41 @@ window.preservation = {
     "originalBytes": 61055,
     "retrieved": "2026-11-20T20:20:05.722Z",
     "resolvedUrl": "https://rcpbml.org.uk/wdie-06/d06-042.htm"
+  },
+  "EV-234": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-234.txt",
+    "format": "txt",
+    "sha256": "2648bd766f6884ebcb1336e41b3e568f4c0274fe0e99299fb0d56c171aa5babb",
+    "recorded": "2026-11-21",
+    "originalSha256": "28c4beb3f0eb83eddd060da824b57d538959a511cb731de6fe8dcf5941e5ba2b",
+    "originalFormat": "html",
+    "originalBytes": 190244,
+    "retrieved": "2026-11-20T20:25:25.782Z",
+    "resolvedUrl": "https://unicornriot.ninja/2024/masked-israel-supporters-attack-uclas-palestine-solidarity-encampment-with-weapons/"
+  },
+  "EV-235": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-235.txt",
+    "format": "txt",
+    "sha256": "1afcda48f2641c3c5f559841ef2838eab0dc7edf48f9f0ff3be543a312499d1d",
+    "recorded": "2026-11-21",
+    "originalSha256": "ff61e6dace288d4dab4018c5c87824b1b757873f5075b589c5bd0b9135541f6c",
+    "originalFormat": "html",
+    "originalBytes": 1559422,
+    "retrieved": "2026-11-20T20:25:25.769Z",
+    "resolvedUrl": "https://www.youtube.com/watch?v=ZVEHoNAR9lo"
+  },
+  "EV-236": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-236.txt",
+    "format": "txt",
+    "sha256": "7f4c48ca84a1b29ff56046598d67003dd7652468543a49157dfe1b251b165d48",
+    "recorded": "2026-11-21",
+    "originalSha256": "e2d64d6c74158aab6da5b28289b2eedfc971b322bf9c53fa948a7f5c975a64e3",
+    "originalFormat": "html",
+    "originalBytes": 54649,
+    "retrieved": "2026-11-20T20:25:26.193Z",
+    "resolvedUrl": "https://newsroom.ucla.edu/condemning-violence-in-our-community"
   }
 };

@@ -24,6 +24,11 @@ for (const strand of strands) {
       if (section === 'sources') {
         assert.equal(new URL(entry.url).protocol, 'https:');
         assert(entry.quote && entry.locator && entry.context, entry.id + ' lacks source context');
+        if (entry.footage) {
+          for (const field of ['creator', 'recorded', 'location', 'timecode', 'verification', 'context']) {
+            assert(typeof entry.footage[field] === 'string' && entry.footage[field].trim(), entry.id + ' lacks footage ' + field);
+          }
+        }
         const saved = preservation[entry.id];
         assert(saved, 'Missing capture for ' + entry.id);
         const excerpt = readFileSync(new URL(saved.path, docs));
