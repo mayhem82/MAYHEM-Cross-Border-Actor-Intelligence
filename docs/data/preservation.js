@@ -291,5 +291,65 @@ window.preservation = {
     "sha256": "bb44c47a69ba5156fb4cc99286c8c537ee5c215a83f7c0b2b73c019f90ed6b8d",
     "recorded": "2026-11-21",
     "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-217": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-217.txt",
+    "format": "txt",
+    "sha256": "b3ac21b99dbb77e868454ef2b7258f19a276816672a8f8650cb37cafa0ff5581",
+    "recorded": "2026-11-21",
+    "originalSha256": "03a2c2b64d70ea8dfee918bab4326e2ac6ed6f858260e703f5a9e9cb82ad0b05",
+    "originalFormat": "pdf",
+    "originalBytes": 488281,
+    "retrieved": "2026-11-20T14:49:07.498Z",
+    "resolvedUrl": "https://unispal.un.org/pdfs/90-06575.pdf"
+  },
+  "EV-218": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-218.txt",
+    "format": "txt",
+    "sha256": "e7edfe2717bf2146a1704064fa4e3d110d56a558dc13de38e2fa3772bb562a5a",
+    "recorded": "2026-11-21",
+    "originalSha256": "fbd8a7397ae57091d83e13c38886d19cbbde90b8e5b757dfeafdd9d3e342c4d9",
+    "originalFormat": "pdf",
+    "originalBytes": 7713807,
+    "retrieved": "2026-11-20T14:49:12.278Z",
+    "resolvedUrl": "https://assets.publishing.service.gov.uk/media/5a7f445040f0b6230268e75b/The_Report_of_the_Iraq_Inquiry_-_Volume_III.pdf"
+  },
+  "EV-219": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-219.txt",
+    "format": "txt",
+    "sha256": "644e3d8119fc492eb6126536094fcf6f5e2c11fe9b24a5210ad6712190103521",
+    "recorded": "2026-11-21",
+    "originalSha256": "1879a8f899d66324e06eff1583c5b99eae1af7e8a84a5748ff0d032b142644ab",
+    "originalFormat": "html",
+    "originalBytes": 140510,
+    "retrieved": "2026-11-20T14:49:11.825Z",
+    "resolvedUrl": "https://wrp.org.uk/features/free-palestine-end-the-occupation/"
+  },
+  "EV-220": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-220.txt",
+    "format": "txt",
+    "sha256": "52acb9dba889a2731df8acd21c7563be7b1dec06198bf8e965d948aa6a77cbd7",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-221": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-221.txt",
+    "format": "txt",
+    "sha256": "1a499a88a8e41c6584973db91434b696c13187e8f89690330f1401f95e30fa7a",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-222": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-222.txt",
+    "format": "txt",
+    "sha256": "24e21e8e050f67063edc216b5b17d3151e8a9f96176ed7996c2f259508d79a89",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
   }
 };

@@ -175,6 +175,72 @@ window.globalRecords = {
       "quote": "Apoiamos a campanha iniciada pelo partido Podemos do Estado Espanhol",
       "context": "The PSOL national directorate declared support for a campaign initiated by Podemos and other parties in the European Parliament’s Left group.",
       "type": "Party publication"
+    },
+    {
+      "id": "EV-217",
+      "title": "European Parliament resolution on December 1989 demonstrations",
+      "publisher": "European Parliament, reproduced by United Nations",
+      "url": "https://unispal.un.org/pdfs/90-06575.pdf",
+      "date": "1990-01-18",
+      "locator": "United Nations bulletin, European Parliament resolution, printed pages 6–7",
+      "quote": "two legal demonstrations on 29 and 30 December 1989",
+      "context": "The parliamentary resolution describes demonstrations associated with the Time for Peace initiative in Jerusalem.",
+      "type": "Parliamentary resolution"
+    },
+    {
+      "id": "EV-218",
+      "title": "Iraq Inquiry report on the 15 February 2003 march",
+      "publisher": "UK Iraq Inquiry",
+      "url": "https://assets.publishing.service.gov.uk/media/5a7f445040f0b6230268e75b/The_Report_of_the_Iraq_Inquiry_-_Volume_III.pdf",
+      "date": "2016-07-06",
+      "locator": "Volume III, section 3.7, paragraph 449, printed page 260",
+      "quote": "a weekend of worldwide protests against military action in Iraq",
+      "context": "The inquiry records a London march, names its organisers and reports different police and organiser estimates.",
+      "type": "Official inquiry report"
+    },
+    {
+      "id": "EV-219",
+      "title": "Workers Revolutionary Party account of a London march",
+      "publisher": "Workers Revolutionary Party",
+      "url": "https://wrp.org.uk/features/free-palestine-end-the-occupation/",
+      "date": "2007-06-11",
+      "locator": "Opening paragraphs, describing the preceding Saturday",
+      "quote": "marched through central London on Saturday",
+      "context": "A party account describes the 9 June 2007 Palestine solidarity march and reports its own attendance estimate.",
+      "type": "Party report"
+    },
+    {
+      "id": "EV-220",
+      "title": "Campaign report on a Gaza blockade demonstration",
+      "publisher": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/press-release-hundreds-protest-blockade-gaza/",
+      "date": "2014-01-18",
+      "locator": "Opening paragraph of 18 January press release",
+      "quote": "The protest took place close to the Israeli Embassy",
+      "context": "The campaign reports a protest on 18 January 2014. The attendance estimate is its own.",
+      "type": "Campaign report"
+    },
+    {
+      "id": "EV-221",
+      "title": "Campaign report on a London march and rally",
+      "publisher": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/london-uk-show-support-gaza/",
+      "date": "2014-07-27",
+      "locator": "Opening paragraphs",
+      "quote": "the march and rally for Gaza that took place in central London on Saturday 26th July",
+      "context": "The campaign reports the 26 July march and attributes an attendance estimate to police.",
+      "type": "Campaign report"
+    },
+    {
+      "id": "EV-222",
+      "title": "Campaign report on a London Gaza rally",
+      "publisher": "Palestine Solidarity Campaign",
+      "url": "https://palestinecampaign.org/biggest-london-rally-yet-gaza/",
+      "date": "2014-08-09",
+      "locator": "Opening paragraphs",
+      "quote": "a protest called by Palestine Solidairty Campaign and other organisations",
+      "context": "The campaign reports a 9 August march and rally. Its attendance figure is attributed to its own account.",
+      "type": "Campaign report"
     }
   ],
   "organisations": [
@@ -1853,6 +1919,146 @@ window.globalRecords = {
         {
           "label": "Limit",
           "text": "The source records a public statement. It does not establish participation in a specific demonstration."
+        }
+      ]
+    },
+    {
+      "id": "TL-223",
+      "title": "Jerusalem Time for Peace demonstration",
+      "summary": "European Parliament recorded the first of two demonstrations associated with the Time for Peace initiative.",
+      "kind": "Demonstration",
+      "country": "Israel · Palestine",
+      "countries": [
+        "PS"
+      ],
+      "date": "1989-12-29",
+      "sources": [
+        "EV-217"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The source is a January 1990 parliamentary resolution reproduced in a UN bulletin."
+        }
+      ]
+    },
+    {
+      "id": "TL-224",
+      "title": "Second Jerusalem Time for Peace demonstration",
+      "summary": "European Parliament recorded a second demonstration associated with the same initiative.",
+      "kind": "Demonstration",
+      "country": "Israel · Palestine",
+      "countries": [
+        "PS"
+      ],
+      "date": "1989-12-30",
+      "sources": [
+        "EV-217"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The resolution identifies two separate dates. Its attendance figure is attributed to the parliamentary account."
+        }
+      ]
+    },
+    {
+      "id": "TL-225",
+      "title": "London anti-Iraq-war march",
+      "summary": "The UK Iraq Inquiry records a London march organised by three anti-war and civil-society organisations.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2003-02-15",
+      "sources": [
+        "EV-218"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The inquiry records a police estimate of at least 750,000 and an organisers’ estimate closer to two million. The precise attendance remains unresolved."
+        }
+      ]
+    },
+    {
+      "id": "TL-226",
+      "title": "London Palestine solidarity march",
+      "summary": "A Workers Revolutionary Party report describes a central London Palestine solidarity march.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2007-06-09",
+      "sources": [
+        "EV-219"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The 11 June report refers to the preceding Saturday. Attendance is the party’s estimate."
+        }
+      ]
+    },
+    {
+      "id": "TL-227",
+      "title": "London demonstration against Gaza blockade",
+      "summary": "The Palestine Solidarity Campaign reported a demonstration on 18 January.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2014-01-18",
+      "sources": [
+        "EV-220"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The campaign’s attendance estimate has not been independently verified here."
+        }
+      ]
+    },
+    {
+      "id": "TL-228",
+      "title": "London march and rally for Gaza",
+      "summary": "The Palestine Solidarity Campaign reported a march and rally in central London.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2014-07-26",
+      "sources": [
+        "EV-221"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The campaign attributed an estimate of 45,000 to police while saying it believed the number was higher."
+        }
+      ]
+    },
+    {
+      "id": "TL-229",
+      "title": "London Gaza solidarity rally",
+      "summary": "The Palestine Solidarity Campaign reported a march and rally as part of a wider day of action.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2014-08-09",
+      "sources": [
+        "EV-222"
+      ],
+      "notes": [
+        {
+          "label": "Source and limits",
+          "text": "The campaign’s reported attendance is an organiser-side estimate. Other cities require their own event records."
         }
       ]
     }
