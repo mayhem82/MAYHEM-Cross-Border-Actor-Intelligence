@@ -252,6 +252,39 @@ window.globalRecords = {
       "quote": "Minnesotan CP members were at an action in Duluth, Minnesota on Oct. 17.",
       "context": "The party retrospectively reports participation by its members and youth organisation in dated ceasefire actions across US cities.",
       "type": "Party report"
+    },
+    {
+      "id": "EV-224",
+      "title": "Truth and Reconciliation Commission account of Western Cape defiance protests",
+      "publisher": "Truth and Reconciliation Commission of South Africa",
+      "url": "https://www.justice.gov.za/trc/report/finalreport/volume%203.pdf",
+      "date": "1998-10-29",
+      "locator": "Volume 3, chapter 5, paragraphs 132–135, printed pages 426–428",
+      "quote": "On 8 August, defiance rallies were held at schools and campuses in the Peninsula",
+      "context": "The commission describes dated anti-apartheid defiance actions and subsequent police responses in the Western Cape in 1989.",
+      "type": "Truth commission report"
+    },
+    {
+      "id": "EV-225",
+      "title": "CPI(M) reports a Delhi demonstration",
+      "publisher": "Communist Party of India (Marxist)",
+      "url": "https://cpim.org/cpim-protest-demonstration-delhi-against-attack-cpim-offices-tripura-rss-bjp/",
+      "date": "2021-09-14",
+      "locator": "Opening paragraph",
+      "quote": "organized a militant protest demonstration today",
+      "context": "The party’s Delhi committee reports its demonstration concerning attacks on its offices in Tripura.",
+      "type": "Party report"
+    },
+    {
+      "id": "EV-226",
+      "title": "CPI(M) report of an April workers’ and farmers’ rally",
+      "publisher": "Communist Party of India (Marxist)",
+      "url": "https://cpim.org/documents-2023-april-cc-report/",
+      "date": "2023-05-12",
+      "locator": "Central committee report, April 5 rally",
+      "quote": "Mazdoor Kisan Sangharh rally",
+      "context": "The party’s central committee report recounts a 5 April 2023 rally in Delhi.",
+      "type": "Party report"
     }
   ],
   "organisations": [
@@ -2470,6 +2503,186 @@ window.globalRecords = {
         {
           "label": "Source attribution",
           "text": "This is the Communist Party USA’s retrospective account of its members’ or youth organisation’s participation. Attendance and other organisations’ roles are not independently established by this record."
+        }
+      ]
+    },
+    {
+      "id": "TL-320",
+      "title": "Cape Town defiance rallies and march",
+      "summary": "The truth commission records rallies and a march after a meeting at St George’s Cathedral.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-08-08",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-321",
+      "title": "Hanover Park National Women’s Day rally",
+      "summary": "The truth commission records a rally where restricted activists defied their orders.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-08-12",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-322",
+      "title": "Strand beach apartheid defiance",
+      "summary": "The truth commission records a protest challenging racial segregation at Strand beach.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-08-19",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-323",
+      "title": "Bloubergstrand beach apartheid defiance",
+      "summary": "The truth commission records a protest challenging racial segregation at Bloubergstrand beach.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-08-19",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-324",
+      "title": "Gugulethu march by church leaders",
+      "summary": "The truth commission records a march in Gugulethu and the police response.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-08-23",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-325",
+      "title": "Cape Town march to Parliament",
+      "summary": "The truth commission records a large defiance march and more than 500 arrests.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-09-02",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-326",
+      "title": "Cape Town Peace March",
+      "summary": "The truth commission records a march led by religious, community and political leaders.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "1989-09-13",
+      "sources": [
+        "EV-224"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "The commission’s historical account describes the event. Its political context does not establish any individual participant’s political affiliation."
+        }
+      ]
+    },
+    {
+      "id": "TL-327",
+      "title": "Delhi demonstration over Tripura office attacks",
+      "summary": "CPI(M) reports that its Delhi committee organised a demonstration concerning attacks on its offices.",
+      "kind": "Demonstration",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2021-09-14",
+      "sources": [
+        "EV-225"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "This is the party’s own account. Reported attendance has not been independently verified here."
+        }
+      ]
+    },
+    {
+      "id": "TL-328",
+      "title": "Delhi workers’ and farmers’ rally",
+      "summary": "A CPI(M) central committee report recounts the Mazdoor Kisan Sangharh [Workers–Farmers Struggle] rally.",
+      "kind": "Demonstration",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2023-04-05",
+      "sources": [
+        "EV-226"
+      ],
+      "notes": [
+        {
+          "label": "Source and limit",
+          "text": "This is the party’s own account. Reported attendance has not been independently verified here."
         }
       ]
     }

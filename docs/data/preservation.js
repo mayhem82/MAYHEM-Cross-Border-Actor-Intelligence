@@ -363,5 +363,41 @@ window.preservation = {
     "originalBytes": 124921,
     "retrieved": "2026-11-20T20:08:15.125Z",
     "resolvedUrl": "https://www.cpusa.org/party_voices/cp-and-ycl-take-it-to-the-streets-ceasefire-now/"
+  },
+  "EV-224": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-224.txt",
+    "format": "txt",
+    "sha256": "95ff62cb66a1b1edf3b22eac5fefcaf5c732940871b4c3c5ab9295488581af66",
+    "recorded": "2026-11-21",
+    "originalSha256": "8596a81355dd7d11e4f1c7bb8794dbb4933a736c5acadd151331091afc6a86a6",
+    "originalFormat": "pdf",
+    "originalBytes": 1893983,
+    "retrieved": "2026-11-20T20:10:33.798Z",
+    "resolvedUrl": "https://www.justice.gov.za/trc/report/finalreport/volume%203.pdf"
+  },
+  "EV-225": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-225.txt",
+    "format": "txt",
+    "sha256": "223c9d82214a47e271ce31cab02e0b38dd3eaf32b457f9ac46d15a9f6b5d1b83",
+    "recorded": "2026-11-21",
+    "originalSha256": "57caf9c33be6c71bd638811ef28d8eb5e9f6acb7eb07e058358106876f3dfee4",
+    "originalFormat": "html",
+    "originalBytes": 48175,
+    "retrieved": "2026-11-20T20:10:24.328Z",
+    "resolvedUrl": "https://cpim.org/cpim-protest-demonstration-delhi-against-attack-cpim-offices-tripura-rss-bjp/"
+  },
+  "EV-226": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-226.txt",
+    "format": "txt",
+    "sha256": "a570b94482d9f43c08b45c995804a76ef53dd50b9ee02992da5cc63f711eddd8",
+    "recorded": "2026-11-21",
+    "originalSha256": "fd7d0b88b69509b0689cf6e7f76739c5984b1cb5c14f1e4e3990705735c485da",
+    "originalFormat": "html",
+    "originalBytes": 109438,
+    "retrieved": "2026-11-20T20:10:35.313Z",
+    "resolvedUrl": "https://cpim.org/documents-2023-april-cc-report/"
   }
 };
