@@ -27,6 +27,8 @@ for (const strand of strands) {
         const saved = preservation[entry.id];
         assert(saved, 'Missing capture for ' + entry.id);
         const excerpt = readFileSync(new URL(saved.path, docs));
+        assert.match(saved.recorded, /^\d{4}-\d{2}-\d{2}$/, entry.id + ' lacks a recording date');
+        assert(excerpt.toString('utf8').split(/\r?\n/).includes('Registered: ' + saved.recorded), entry.id + ' recording date differs from the preserved excerpt');
         assert.equal(sum(excerpt), saved.sha256, entry.id + ' excerpt checksum mismatch');
         assert(excerpt.toString('utf8').includes(entry.quote), entry.id + ' quote differs from capture');
         if (saved.documentPath) {
