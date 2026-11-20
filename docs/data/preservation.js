@@ -116,6 +116,74 @@ window.preservation = {
     "recorded": "2026-11-21",
     "captureNote": "Full source capture unavailable during this edition."
   },
+  "EV-106": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-106.txt",
+    "format": "txt",
+    "sha256": "698b05b082b9c8cedb1fda9cf28626406a9815897e451859f748716b5eabb085",
+    "recorded": "2026-11-21",
+    "originalSha256": "931ac1b3819bdc8ffeae08de57a0c6a31fb573dc672ab5b2934535046415fbdd",
+    "originalFormat": "pdf",
+    "originalBytes": 249415,
+    "retrieved": "2026-11-20T20:17:21.302Z",
+    "resolvedUrl": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_13-cr-00725/pdf/USCOURTS-cand-4_13-cr-00725-2.pdf"
+  },
+  "EV-107": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-107.txt",
+    "format": "txt",
+    "sha256": "530cae004bd59540005d1f032f89785755f4c39693497a9f6f889bc1e26ee950",
+    "recorded": "2026-11-21",
+    "originalSha256": "d7f4ca958ee7a710cf42f44bf563c621112b7bd9d9d5e08f905b2f8fd4df0337",
+    "originalFormat": "html",
+    "originalBytes": 13868,
+    "retrieved": "2026-11-20T20:17:22.381Z",
+    "resolvedUrl": "https://www.justice.gov/archive/usao/waw/press/2012/June/waters.html"
+  },
+  "EV-108": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-108.txt",
+    "format": "txt",
+    "sha256": "7612578dca96d328dc4e5995fc42cc2ff9a7fc3e8d24adf195197db30e1a31f4",
+    "recorded": "2026-11-21",
+    "originalSha256": "419a8e8d1d60c266adbd4343b7585d80d59edb848d81af7e1b8885e2c8b0a7c0",
+    "originalFormat": "html",
+    "originalBytes": 13520,
+    "retrieved": "2026-11-20T20:17:22.261Z",
+    "resolvedUrl": "https://www.justice.gov/archive/usao/waw/press/2012/Mar/solondz.html"
+  },
+  "EV-109": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-109.txt",
+    "format": "txt",
+    "sha256": "6a16bdb957a1f1c578a4c0f5bb261e0f20b5a99ccf1d3b080335c96ff110eccf",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-110": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-110.txt",
+    "format": "txt",
+    "sha256": "a1b685881295536bf2e86dd130ed92cbea53f86c8f6a5ec63322371a066e0875",
+    "recorded": "2026-11-21",
+    "originalSha256": "d74052921c4c0686800d1286c76bdf6643e5e40e9d34791a3040371573a4440c",
+    "originalFormat": "html",
+    "originalBytes": 10896,
+    "retrieved": "2026-11-20T20:17:22.273Z",
+    "resolvedUrl": "https://www.justice.gov/archive/usao/cac/Pressroom/pr2010/007.html"
+  },
+  "EV-111": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-111.txt",
+    "format": "txt",
+    "sha256": "c5f44362b1e8d128d710b38dbc45f885b36b8d16a270206171bad985f3c4f955",
+    "recorded": "2026-11-21",
+    "originalSha256": "06b22ff07cc6387df511c1c3e9671fe5ab3ae2433c0614a940c02539d7059d4f",
+    "originalFormat": "html",
+    "originalBytes": 12645,
+    "retrieved": "2026-11-20T20:17:59.772Z",
+    "resolvedUrl": "https://www.justice.gov/archive/usao/waw/press/2008/jul/kolar.html"
+  },
   "EV-201": {
     "label": "Quotation and source metadata",
     "path": "evidence/EV-201.txt",

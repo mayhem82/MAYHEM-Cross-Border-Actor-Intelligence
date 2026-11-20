@@ -54,6 +54,72 @@ window.cases = {
       "quote": "Rigetta nel resto i ricorsi",
       "context": "The court annulled one count for defective charging, dismissed the remaining appeals and recalculated the sentences of the two defendants.",
       "type": "Court judgment"
+    },
+    {
+      "id": "EV-106",
+      "title": "District court order on Briana Waters’ supervised release",
+      "publisher": "US District Court, Northern District of California",
+      "url": "https://www.govinfo.gov/content/pkg/USCOURTS-cand-4_13-cr-00725/pdf/USCOURTS-cand-4_13-cr-00725-2.pdf",
+      "date": "2015-10-02",
+      "locator": "Case 13-cr-00725-JST-1, page 1",
+      "quote": "After a conviction which was subsequently reversed, she pled guilty",
+      "context": "The court records that Waters’ earlier conviction was reversed and that she later pleaded guilty. Its 2015 order concerns supervised release.",
+      "type": "Court order"
+    },
+    {
+      "id": "EV-107",
+      "title": "US Attorney reports Waters sentencing and related defendants",
+      "publisher": "US Attorney’s Office, Western District of Washington",
+      "url": "https://www.justice.gov/archive/usao/waw/press/2012/June/waters.html",
+      "date": "2012-06-22",
+      "locator": "Sentencing report, opening paragraphs and paragraph on other defendants",
+      "quote": "Three other defendants, Jennifer Kolar",
+      "context": "The prosecutor’s office reports Waters’ sentencing and the guilty pleas and sentences of three other defendants in the University of Washington arson.",
+      "type": "Prosecutor account"
+    },
+    {
+      "id": "EV-108",
+      "title": "US Attorney reports Justin Solondz sentencing",
+      "publisher": "US Attorney’s Office, Western District of Washington",
+      "url": "https://www.justice.gov/archive/usao/waw/press/2012/Mar/solondz.html",
+      "date": "2012-03-16",
+      "locator": "Opening paragraph and account of the plea",
+      "quote": "pleaded guilty last December to conspiracy and arson",
+      "context": "The prosecutor’s office reports Solondz’s guilty plea and seven-year sentence. It separately describes travel after arrests in the case.",
+      "type": "Prosecutor account"
+    },
+    {
+      "id": "EV-109",
+      "title": "US Attorney reports William Cottrell sentencing",
+      "publisher": "US Attorney’s Office, Central District of California",
+      "url": "https://www.justice.gov/archive/usao/cac/Pressroom/pr2005/059.html",
+      "date": "2005-04-18",
+      "locator": "Sentencing and conviction paragraphs",
+      "quote": "intimidate and influence decisions of American consumers",
+      "context": "The prosecutor’s office reports the 2004 verdict and sentencing court’s assessment of the 2003 attacks.",
+      "type": "Prosecutor account"
+    },
+    {
+      "id": "EV-110",
+      "title": "US Attorney notes Cottrell re-sentencing",
+      "publisher": "US Attorney’s Office, Central District of California",
+      "url": "https://www.justice.gov/archive/usao/cac/Pressroom/pr2010/007.html",
+      "date": "2010-01-11",
+      "locator": "Closing paragraph identifying an earlier prosecution",
+      "quote": "recently re-sentenced to 100 months in federal prison",
+      "context": "The report states that Cottrell was re-sentenced to 100 months by January 2010. It does not give the precise re-sentencing date.",
+      "type": "Prosecutor account"
+    },
+    {
+      "id": "EV-111",
+      "title": "US Attorney reports Jennifer Kolar sentencing",
+      "publisher": "US Attorney’s Office, Western District of Washington",
+      "url": "https://www.justice.gov/archive/usao/waw/press/2008/jul/kolar.html",
+      "date": "2008-07-18",
+      "locator": "Opening sentencing and plea paragraphs",
+      "quote": "KOLAR pleaded guilty to Conspiracy to Commit Arson",
+      "context": "The prosecutor’s office reports Kolar’s guilty plea and five-year sentence on 18 July 2008.",
+      "type": "Prosecutor account"
     }
   ],
   "connections": [
@@ -192,6 +258,47 @@ window.cases = {
           "text": "Judgment 34782/2015 concerns Alfredo Cospito and Nicola Gai. The court’s reasoning and operative part explain the partial annulment."
         }
       ]
+    },
+    {
+      "id": "TL-105",
+      "title": "University of Washington arson",
+      "summary": "Court and prosecution records describe the arson and later convictions in the University of Washington case.",
+      "kind": "Criminal incident",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2001-05-21",
+      "sources": [
+        "EV-106",
+        "EV-107"
+      ],
+      "notes": [
+        {
+          "label": "Attribution",
+          "text": "The court order and prosecutor’s account describe individual guilty pleas and proceedings. They do not establish wrongdoing by participants in unrelated protests."
+        }
+      ]
+    },
+    {
+      "id": "TL-106",
+      "title": "California vehicle and dealership arsons",
+      "summary": "A prosecutor’s sentencing account describes a series of attacks for which William Cottrell was convicted.",
+      "kind": "Criminal incident",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2003-08-22",
+      "sources": [
+        "EV-109"
+      ],
+      "notes": [
+        {
+          "label": "Judicial finding",
+          "text": "The prosecutor reports that the sentencing judge found the attacks were intended to intimidate and influence consumer decisions."
+        }
+      ]
     }
   ],
   "judicial": [
@@ -323,6 +430,119 @@ window.cases = {
       ],
       "caseId": "Italian Court of Cassation 34782/2015",
       "stage": "Conviction"
+    },
+    {
+      "id": "J-106",
+      "title": "Briana Waters sentencing",
+      "summary": "The prosecutor reports a 48-month sentence after a guilty plea.",
+      "kind": "Judicial outcome",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2012-06-22",
+      "sources": [
+        "EV-106",
+        "EV-107"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This record attributes the disposition to the cited official account. Later proceedings require separate verification."
+        }
+      ],
+      "caseId": "United States v. Waters",
+      "stage": "Conviction"
+    },
+    {
+      "id": "J-107",
+      "title": "Justin Solondz sentencing",
+      "summary": "The prosecutor reports a seven-year sentence after a guilty plea.",
+      "kind": "Judicial outcome",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2012-03-16",
+      "sources": [
+        "EV-108"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This record attributes the disposition to the cited official account. Later proceedings require separate verification."
+        }
+      ],
+      "caseId": "United States v. Solondz",
+      "stage": "Conviction"
+    },
+    {
+      "id": "J-108",
+      "title": "Jennifer Kolar sentencing",
+      "summary": "The prosecutor reports a five-year sentence for the university fire and other arsons.",
+      "kind": "Judicial outcome",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2008-07-18",
+      "sources": [
+        "EV-107",
+        "EV-111"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This record attributes the disposition to the cited official account. Later proceedings require separate verification."
+        }
+      ],
+      "caseId": "United States v. Kolar",
+      "stage": "Conviction"
+    },
+    {
+      "id": "J-109",
+      "title": "Lacey Phillabaum sentencing",
+      "summary": "The prosecutor reports a three-year sentence after a guilty plea.",
+      "kind": "Judicial outcome",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "",
+      "sources": [
+        "EV-107"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This record attributes the disposition to the cited official account. Later proceedings require separate verification."
+        }
+      ],
+      "caseId": "United States v. Phillabaum",
+      "stage": "Conviction"
+    },
+    {
+      "id": "J-110",
+      "title": "William Jensen Cottrell sentencing",
+      "summary": "The prosecutor reports a 100-month sentence and later re-sentencing to the same term.",
+      "kind": "Judicial outcome",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2005-04-18",
+      "sources": [
+        "EV-109",
+        "EV-110"
+      ],
+      "notes": [
+        {
+          "label": "Source and time",
+          "text": "This record attributes the disposition to the cited official account. Later proceedings require separate verification."
+        }
+      ],
+      "caseId": "United States v. Cottrell",
+      "stage": "Conviction"
     }
   ],
   "analyses": [
@@ -390,6 +610,30 @@ window.cases = {
         {
           "label": "Evidence limit",
           "text": "The sequence concerns this incident. The court did not find that it occurred at a demonstration."
+        }
+      ]
+    },
+    {
+      "id": "AN-104",
+      "title": "Intimidation as a stated purpose of criminal attacks",
+      "summary": "The prosecutor reported that the sentencing judge found the 2003 attacks were intended to intimidate and influence consumer decisions.",
+      "kind": "Court finding",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2005-04-18",
+      "sources": [
+        "EV-109"
+      ],
+      "notes": [
+        {
+          "label": "Evidence of use",
+          "text": "The US Attorney’s 2005 account attributes this finding to the sentencing judge in William Cottrell’s case."
+        },
+        {
+          "label": "Limit",
+          "text": "The finding concerns the conduct sentenced in this case. It does not establish measured changes in consumer behaviour or a connection to other protests."
         }
       ]
     }
@@ -558,6 +802,130 @@ window.cases = {
         {
           "label": "Limit",
           "text": "The case does not establish paid travel to protests. Later legal developments and present status require additional records."
+        }
+      ]
+    },
+    {
+      "id": "ACT-104",
+      "title": "Briana Waters",
+      "summary": "US District Court records that an earlier conviction was reversed and she subsequently pleaded guilty.",
+      "kind": "Individual · conviction",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2012-06-22",
+      "sources": [
+        "EV-106",
+        "EV-107"
+      ],
+      "notes": [
+        {
+          "label": "Procedural history",
+          "text": "The prosecutor’s office reported a 48-month sentence in 2012. A later court order records the reversal of the 2008 conviction and subsequent guilty plea."
+        },
+        {
+          "label": "Scope",
+          "text": "This record describes the individual court outcome in the cited sources. It does not establish a connection to Palestine solidarity protests or present custody status."
+        }
+      ]
+    },
+    {
+      "id": "ACT-105",
+      "title": "Justin Solondz",
+      "summary": "The US Attorney’s Office reports a guilty plea to conspiracy and arson.",
+      "kind": "Individual · conviction",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2012-03-16",
+      "sources": [
+        "EV-107",
+        "EV-108"
+      ],
+      "notes": [
+        {
+          "label": "Procedural history",
+          "text": "The prosecutor’s office reports a seven-year sentence. It also describes travel after he learned of arrests in the case. The source does not establish paid travel to protests."
+        },
+        {
+          "label": "Scope",
+          "text": "This record describes the individual court outcome in the cited sources. It does not establish a connection to Palestine solidarity protests or present custody status."
+        }
+      ]
+    },
+    {
+      "id": "ACT-106",
+      "title": "Jennifer Kolar",
+      "summary": "The US Attorney’s Office reports a guilty plea in an environmental arson case.",
+      "kind": "Individual · conviction",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2008-07-18",
+      "sources": [
+        "EV-107",
+        "EV-111"
+      ],
+      "notes": [
+        {
+          "label": "Procedural history",
+          "text": "The 2012 account reports a five-year sentence for the university fire and other arsons."
+        },
+        {
+          "label": "Scope",
+          "text": "This record describes the individual court outcome in the cited sources. It does not establish a connection to Palestine solidarity protests or present custody status."
+        }
+      ]
+    },
+    {
+      "id": "ACT-107",
+      "title": "Lacey Phillabaum",
+      "summary": "The US Attorney’s Office reports a guilty plea in the university arson case.",
+      "kind": "Individual · conviction",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "",
+      "sources": [
+        "EV-107"
+      ],
+      "notes": [
+        {
+          "label": "Procedural history",
+          "text": "The 2012 account reports a three-year sentence. The report does not state a sentencing day for this individual."
+        },
+        {
+          "label": "Scope",
+          "text": "This record describes the individual court outcome in the cited sources. It does not establish a connection to Palestine solidarity protests or present custody status."
+        }
+      ]
+    },
+    {
+      "id": "ACT-108",
+      "title": "William Jensen Cottrell",
+      "summary": "The US Attorney’s Office reports a jury conviction on conspiracy and arson counts in connection with 2003 attacks.",
+      "kind": "Individual · conviction",
+      "country": "United States",
+      "countries": [
+        "US"
+      ],
+      "date": "2005-04-18",
+      "sources": [
+        "EV-109",
+        "EV-110"
+      ],
+      "notes": [
+        {
+          "label": "Procedural history",
+          "text": "The 2005 account reports a 100-month sentence. A 2010 account says he was subsequently re-sentenced to 100 months, without specifying the date of re-sentencing."
+        },
+        {
+          "label": "Scope",
+          "text": "This record describes the individual court outcome in the cited sources. It does not establish a connection to Palestine solidarity protests or present custody status."
         }
       ]
     }
