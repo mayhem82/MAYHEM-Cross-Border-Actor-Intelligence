@@ -1314,6 +1314,146 @@ window.globalRecords = {
           "text": "The entry records the cited activity. Current leadership, present-day affiliation and any other conduct require separate evidence."
         }
       ]
+    },
+    {
+      "id": "TL-216",
+      "title": "Dublin demonstration on the global day of action",
+      "summary": "Associated Press reported a Palestine solidarity march in Dublin.",
+      "kind": "Demonstration",
+      "country": "Ireland",
+      "countries": [
+        "IE"
+      ],
+      "date": "2024-01-13",
+      "sources": [
+        "EV-206"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "AP reported that thousands marched. The source does not provide an exact count or establish a common chain of direction with other cities."
+        }
+      ]
+    },
+    {
+      "id": "TL-217",
+      "title": "London demonstration on the global day of action",
+      "summary": "Associated Press documented a Palestine solidarity march in central London.",
+      "kind": "Demonstration",
+      "country": "United Kingdom",
+      "countries": [
+        "GB"
+      ],
+      "date": "2024-01-13",
+      "sources": [
+        "EV-206"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "The report and photographs document the event. Participation totals and how individual participants were mobilised remain unverified."
+        }
+      ]
+    },
+    {
+      "id": "TL-218",
+      "title": "Paris demonstration on the global day of action",
+      "summary": "Associated Press reported a march from the Place de la République calling for an immediate ceasefire.",
+      "kind": "Demonstration",
+      "country": "France",
+      "countries": [
+        "FR"
+      ],
+      "date": "2024-01-13",
+      "sources": [
+        "EV-206"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "The reporting describes the demonstration and its demands. It does not establish organisational direction across borders."
+        }
+      ]
+    },
+    {
+      "id": "TL-219",
+      "title": "Rome demonstration on the global day of action",
+      "summary": "Associated Press reported a Palestine solidarity rally in Rome.",
+      "kind": "Demonstration",
+      "country": "Italy",
+      "countries": [
+        "IT"
+      ],
+      "date": "2024-01-13",
+      "sources": [
+        "EV-206"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "The report places the demonstration in Rome. The relationship of its organisers to events elsewhere requires separate evidence."
+        }
+      ]
+    },
+    {
+      "id": "TL-220",
+      "title": "Cape Town Quds Day march",
+      "summary": "The South African Communist Party reported and publicly commended a Cape Town solidarity march.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "2024-04-05",
+      "sources": [
+        "EV-213"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "This is the party’s 7 April account. Its statement does not establish that the party organised the march."
+        }
+      ]
+    },
+    {
+      "id": "TL-221",
+      "title": "Johannesburg Quds Day protest",
+      "summary": "The South African Communist Party reported and publicly commended a solidarity protest in Johannesburg.",
+      "kind": "Demonstration",
+      "country": "South Africa",
+      "countries": [
+        "ZA"
+      ],
+      "date": "2024-04-06",
+      "sources": [
+        "EV-213"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "This is the party’s 7 April account. Its statement does not establish that the party organised the protest."
+        }
+      ]
+    },
+    {
+      "id": "TL-222",
+      "title": "Delhi Palestine solidarity event",
+      "summary": "CPI(M) reported a Delhi solidarity event as part of a day of action by five Indian left parties.",
+      "kind": "Demonstration",
+      "country": "India",
+      "countries": [
+        "IN"
+      ],
+      "date": "2025-06-17",
+      "sources": [
+        "EV-212"
+      ],
+      "notes": [
+        {
+          "label": "Attribution and limit",
+          "text": "The party identifies a Delhi event and reports other meetings nationwide. The other events have not been individually verified in this record."
+        }
+      ]
     }
   ],
   "connections": [
