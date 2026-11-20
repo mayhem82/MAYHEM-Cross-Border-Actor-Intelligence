@@ -411,5 +411,29 @@ window.preservation = {
     "originalBytes": 621949,
     "retrieved": "2026-11-20T20:14:11.247Z",
     "resolvedUrl": "https://www.sydney.edu.au/content/dam/corporate/documents/news-opinions/2024/external-review-bruce-hodgkinson-report-29112024.pdf"
+  },
+  "EV-228": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-228.txt",
+    "format": "txt",
+    "sha256": "606ce62ded4e10cd68a40320bcaa143ca1fa8ebcda6003d44a90251d53583194",
+    "recorded": "2026-11-21",
+    "originalSha256": "f8bae9912669e95816cab163e78e7229df468bc13e061a10cd75f49931ec5773",
+    "originalFormat": "html",
+    "originalBytes": 120851,
+    "retrieved": "2026-11-20T20:15:43.907Z",
+    "resolvedUrl": "https://toronto.citynews.ca/2024/05/03/pro-palestinian-protesters-set-up-encampments-at-universities-in-australia/"
+  },
+  "EV-229": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-229.txt",
+    "format": "txt",
+    "sha256": "e63dfc47c0af72d2c3c0c68f255c45184afd228bffd2bb30bdc5bf8c2e492022",
+    "recorded": "2026-11-21",
+    "originalSha256": "60e49b97224bd3740d6d91b69fdd4f37c7ff24875d78dd05caf404989ac7264f",
+    "originalFormat": "html",
+    "originalBytes": 294357,
+    "retrieved": "2026-11-20T20:15:42.410Z",
+    "resolvedUrl": "https://www.abc.net.au/news/2024-05-06/the-pro-palestinian-camps-setting-up-at-australian/103812198"
   }
 };

@@ -296,6 +296,28 @@ window.globalRecords = {
       "quote": "the encampment did not erupt into physical violence",
       "context": "The reviewer described some verbal altercations and no eruption into physical violence at the encampment, and separately assessed submissions about antisemitic, Islamophobic and other campus behaviour.",
       "type": "Commissioned external review"
+    },
+    {
+      "id": "EV-228",
+      "title": "Associated Press report on Australian campus protests",
+      "publisher": "Associated Press, syndicated by CityNews",
+      "url": "https://toronto.citynews.ca/2024/05/03/pro-palestinian-protesters-set-up-encampments-at-universities-in-australia/",
+      "date": "2024-05-03",
+      "locator": "Opening and paragraphs describing the University of Sydney counterprotest",
+      "quote": "The Australian Broadcasting Corp. reported a scuffle between the groups.",
+      "context": "The AP report describes opposing protesters at Sydney and attributes its account of a scuffle to the ABC. It reports no arrests.",
+      "type": "Contemporaneous reporting"
+    },
+    {
+      "id": "EV-229",
+      "title": "ABC report on Australian campus encampments",
+      "publisher": "Australian Broadcasting Corporation",
+      "url": "https://www.abc.net.au/news/2024-05-06/the-pro-palestinian-camps-setting-up-at-australian/103812198",
+      "date": "2024-05-06",
+      "locator": "Transcript, reporter’s account of the Friday Sydney counterprotest",
+      "quote": "a very small number of people starting shouting matches on the sidelines",
+      "context": "In a broadcast three days later, an ABC reporter described shouting matches and said the event he reported was peaceful.",
+      "type": "Broadcast transcript"
     }
   ],
   "organisations": [
@@ -2725,6 +2747,36 @@ window.globalRecords = {
           "text": "This is the party’s own account. Reported attendance has not been independently verified here."
         }
       ]
+    },
+    {
+      "id": "TL-329",
+      "title": "Opposing demonstrations at the University of Sydney",
+      "summary": "AP reported a scuffle at opposing demonstrations. A later ABC broadcast described shouting matches and a peaceful event.",
+      "kind": "Demonstration and reported scuffle",
+      "country": "Australia",
+      "countries": [
+        "AU"
+      ],
+      "date": "2024-05-03",
+      "sources": [
+        "EV-228",
+        "EV-229",
+        "EV-227"
+      ],
+      "notes": [
+        {
+          "label": "AP account",
+          "text": "AP says some participants scuffled and attributes a report of a scuffle to the ABC. It reports no arrests."
+        },
+        {
+          "label": "ABC broadcast",
+          "text": "In a 6 May programme, an ABC reporter described a small number of shouting matches and said the event he reported was peaceful."
+        },
+        {
+          "label": "Review",
+          "text": "The later external review describes the encampment as not having erupted into physical violence. These descriptions have different wording and scopes. The precise relationship between the reported scuffle and the reviewer’s assessment remains unresolved."
+        }
+      ]
     }
   ],
   "analyses": [
@@ -2835,6 +2887,28 @@ window.globalRecords = {
         {
           "label": "Resolution",
           "text": "Seek a dated contemporaneous clarification defining the start event."
+        }
+      ]
+    },
+    {
+      "id": "Q-202",
+      "title": "How do the Sydney reports relate to each other?",
+      "summary": "AP reported a scuffle, a later ABC broadcast described shouting matches, and the external review used a broader assessment of the encampment.",
+      "kind": "Unknown",
+      "country": "Australia",
+      "countries": [
+        "AU"
+      ],
+      "date": "2024-05-03",
+      "sources": [
+        "EV-228",
+        "EV-229",
+        "EV-227"
+      ],
+      "notes": [
+        {
+          "label": "Evidence needed",
+          "text": "The underlying ABC report referenced by AP, contemporaneous footage and the review’s incident-level material could clarify whether the accounts describe the same conduct and how their scopes differ."
         }
       ]
     }
