@@ -191,5 +191,29 @@ window.preservation = {
     "sha256": "295a44de9a7b20be97373c867787b0e35e0ef7be29fc72b799d3653718394773",
     "recorded": "2026-11-20",
     "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-209": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-209.txt",
+    "format": "txt",
+    "sha256": "2eecfdb70373e75655187fe1f69d949a3a8c06d8dd4b65e146789bca281fba5d",
+    "recorded": "2026-11-20",
+    "originalSha256": "60a9576eaf78acaa08772f49bf71c023dcf7e4fdfceae43d65ac1bbbcff06951",
+    "originalFormat": "html",
+    "originalBytes": 48864,
+    "retrieved": "2026-11-20T12:38:25.036Z",
+    "resolvedUrl": "https://www.ngo-jvc.net/activity/advocacy/20241002_gazastatement.html"
+  },
+  "EV-210": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-210.txt",
+    "format": "txt",
+    "sha256": "628f6793628b24921c814a86e1050f0b8979d030d10b30f7fb0a03236d19c1af",
+    "recorded": "2026-11-20",
+    "originalSha256": "629ccb1ea359198f5e09ec0b57cb6450471e70be01e3fbe897b85c676fa8a7f5",
+    "originalFormat": "html",
+    "originalBytes": 217338,
+    "retrieved": "2026-11-20T12:38:25.135Z",
+    "resolvedUrl": "https://peaceboat.org/english/news/ceasefire-in-gaza_oct2024"
   }
 };

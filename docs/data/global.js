@@ -87,6 +87,28 @@ window.globalRecords = {
       "quote": "Sentencia condenatoria",
       "context": "The first-instance judgment records criminal responsibility in the hostage-taking case. The final appeal in EV-207 modified the disposition.",
       "type": "Judgment"
+    },
+    {
+      "id": "EV-209",
+      "title": "Six Japanese NGOs issue a joint Gaza ceasefire statement",
+      "publisher": "Japan International Volunteer Center",
+      "url": "https://www.ngo-jvc.net/activity/advocacy/20241002_gazastatement.html",
+      "date": "2024-10-02",
+      "locator": "Joint declaration, final paragraph and the six names under the action committee heading",
+      "quote": "一刻も早い恒久的な停戦と占領の終結",
+      "context": "The statement calls for a permanent ceasefire as soon as possible and an end to the occupation. It names the six organisations on the action committee. The page also invites additional endorsements.",
+      "type": "Published joint statement"
+    },
+    {
+      "id": "EV-210",
+      "title": "Peace Boat reports on the Tokyo candlelight gathering",
+      "publisher": "Peace Boat",
+      "url": "https://peaceboat.org/english/news/ceasefire-in-gaza_oct2024",
+      "date": "2024-10-09",
+      "locator": "Opening three paragraphs and paragraph identifying the event coordinators",
+      "quote": "In a joint statement, the organizations called for an immediate ceasefire.",
+      "context": "A co-organiser reports that humanitarian organisations held a candlelight gathering at Zojoji Temple on 5 October 2024. It describes the public call and identifies the coordinators.",
+      "type": "Organiser account"
     }
   ],
   "organisations": [
@@ -181,6 +203,31 @@ window.globalRecords = {
         {
           "label": "Leadership",
           "text": "The cited signatory list supplies no governance or leadership record for this group."
+        }
+      ]
+    },
+    {
+      "id": "ORG-205",
+      "title": "Peace Boat",
+      "summary": "Peace Boat was one of the six Japanese NGOs that coordinated the October 2024 Tokyo ceasefire gathering.",
+      "kind": "Documented event organiser",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "2024-10-05",
+      "sources": [
+        "EV-209",
+        "EV-210"
+      ],
+      "notes": [
+        {
+          "label": "Documented role",
+          "text": "The joint declaration names Peace Boat on the action committee. Its own retrospective describes the candlelight gathering and the joint demand."
+        },
+        {
+          "label": "Scope of this profile",
+          "text": "These publications document one action. They leave the organisation’s standing leadership and any broader relationships outside this record."
         }
       ]
     }
@@ -300,6 +347,31 @@ window.globalRecords = {
           "text": "The court dealt with seven former secretariat members and conduct during the Colombian armed conflict. Attribution is confined to those proceedings."
         }
       ]
+    },
+    {
+      "id": "FN-204",
+      "title": "Two organiser publications document the Tokyo action",
+      "summary": "The Japan International Volunteer Center published the joint demand before the gathering. Peace Boat subsequently reported that the event took place.",
+      "kind": "Fact",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "2024-10-05",
+      "sources": [
+        "EV-209",
+        "EV-210"
+      ],
+      "notes": [
+        {
+          "label": "What the sources establish",
+          "text": "The published declaration and subsequent account support the date, the stated purpose and the identity of the coordinating organisations."
+        },
+        {
+          "label": "Attribution",
+          "text": "Both publishers participated. Their records establish cooperation on this event. An ongoing international affiliation would require separate evidence."
+        }
+      ]
     }
   ],
   "events": [
@@ -404,6 +476,31 @@ window.globalRecords = {
         {
           "label": "Case",
           "text": "Macrocase 01, decision TP-SA-SP-620."
+        }
+      ]
+    },
+    {
+      "id": "TL-206",
+      "title": "Humanitarian NGOs hold a Tokyo candlelight gathering",
+      "summary": "Six organisations coordinated a gathering at Zojoji Temple in Tokyo calling for a ceasefire in Gaza.",
+      "kind": "Demonstration",
+      "country": "Japan",
+      "countries": [
+        "JP"
+      ],
+      "date": "2024-10-05",
+      "sources": [
+        "EV-209",
+        "EV-210"
+      ],
+      "notes": [
+        {
+          "label": "Before the event",
+          "text": "The Japan International Volunteer Center published the joint declaration on 2 October. It lists the six organisations on the action committee."
+        },
+        {
+          "label": "After the event",
+          "text": "Peace Boat’s 9 October account records that the gathering took place on 5 October. Neither cited passage supplies an attendance count."
         }
       ]
     }

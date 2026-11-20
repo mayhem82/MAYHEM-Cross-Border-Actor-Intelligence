@@ -1,5 +1,5 @@
 (function globe(){
-const locations={AU:['Australia','Oceania',134,-25],US:['United States','North America',-100,38],CO:['Colombia','South America',-74,5],MY:['Malaysia','Asia',102,4],CL:['Chile','South America',-71,-30],ZA:['South Africa','Africa',25,-29],PS:['Palestine','Asia',35,32],BE:['Belgium','Europe',4.6,50.7],IE:['Ireland','Europe',-8,53.3],FR:['France','Europe',2.4,46.7],DE:['Germany','Europe',10.4,51.1],GR:['Greece','Europe',22.8,39.2],IT:['Italy','Europe',12.8,43]};
+const locations={JP:['Japan','Asia',138,37],AU:['Australia','Oceania',134,-25],US:['United States','North America',-100,38],CO:['Colombia','South America',-74,5],MY:['Malaysia','Asia',102,4],CL:['Chile','South America',-71,-30],ZA:['South Africa','Africa',25,-29],PS:['Palestine','Asia',35,32],BE:['Belgium','Europe',4.6,50.7],IE:['Ireland','Europe',-8,53.3],FR:['France','Europe',2.4,46.7],DE:['Germany','Europe',10.4,51.1],GR:['Greece','Europe',22.8,39.2],IT:['Italy','Europe',12.8,43]};
 const xy=(lon,lat)=>[495+lon*2.72*Math.sqrt(1-.75*(lat/90)**2),(84-lat)*3.14];
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 const places=Object.fromEntries(Object.entries(locations).map(([code,[name,region,lon,lat]])=>[code,{name,region,point:xy(lon,lat)}]));
