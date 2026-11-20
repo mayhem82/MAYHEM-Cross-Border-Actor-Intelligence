@@ -390,5 +390,37 @@ window.cases = {
         "GR"
       ]
     }
+  ],
+  "actors": [
+    {
+      "id": "ACT-101",
+      "title": "Anonymised defendant in Dresden proceedings",
+      "summary": "One individual was convicted of offences including dangerous bodily harm and participation in a criminal association. The federal judgment preserves the defendant’s anonymity.",
+      "kind": "Individual · conviction",
+      "country": "Germany",
+      "countries": [
+        "DE"
+      ],
+      "date": "2025-03-19",
+      "sources": [
+        "EV-102",
+        "EV-104",
+        "EV-103"
+      ],
+      "notes": [
+        {
+          "label": "Record and scope",
+          "text": "Federal Court of Justice judgment 3 StR 173/24 concerns this defendant. Its operative part records four dangerous-bodily-harm counts in conjunction with membership in a criminal association and other offences."
+        },
+        {
+          "label": "Separate acquittal",
+          "text": "The same judgment upheld an acquittal concerning a separate 2018 incident."
+        },
+        {
+          "label": "Later enforcement",
+          "text": "In May 2026 the court dismissed the prosecution challenge to the suspension of the remaining sentence on probation. Subsequent custody status is not established here."
+        }
+      ]
+    }
   ]
 };

@@ -23,7 +23,7 @@ const icons = {
 };
 function icon(key,size=18){return `<svg width="${size}" height="${size}" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">${icons[key]||icons.source}</svg>`;}
 const pages = {
- dashboard:['Dashboard','dashboard'], organisations:['Organisation register','org','Named organisations, their declared objectives, governance and documented activities.'],
+ dashboard:['Dashboard','dashboard'], actors:['Individual actors','org','People documented in public records, with the conduct and procedural outcome identified for each individual.'], organisations:['Organisation register','org','Named organisations, their declared objectives, governance and documented activities.'],
  network:['Network map','network','Explore documented relationships across borders. Select a layer to see its evidence and time period.'],
  judicial:['Judicial register','scale','Arrest and court records by proceeding. Read each disposition alongside the conduct and count it concerns.'],
  timeline:['Incident timeline','timeline','The current record spans 1986–2026. Demonstrations, organisational developments and judicial decisions appear in date order.'],
@@ -33,8 +33,8 @@ const pages = {
  questions:['Unresolved questions','question','Open questions and the records needed to resolve them.'],
  investigations:['Active investigations','folder','Open lines of inquiry and the evidence reviewed so far.']
 };
-const navGroups = [['Investigation',['dashboard','network','timeline']],['Registers',['organisations','judicial','sources']],['Research',['analyses','method']]];
-const categoryPages = {organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
+const navGroups = [['Investigation',['dashboard','network','timeline']],['Registers',['organisations','actors','judicial','sources']],['Research',['analyses','method']]];
+const categoryPages = {actors:'actors',organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
 const data = {}, records = new Map();
 for(const key of Object.keys(categoryPages)){
  data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[])];
