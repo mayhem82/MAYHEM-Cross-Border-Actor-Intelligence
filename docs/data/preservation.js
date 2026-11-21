@@ -731,5 +731,49 @@ window.preservation = {
     "originalBytes": 239920,
     "retrieved": "2026-11-21T10:03:26.519Z",
     "resolvedUrl": "https://www.hrw.org/news/2018/06/13/israel-apparent-war-crimes-gaza"
+  },
+  "EV-700": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-700.txt",
+    "format": "txt",
+    "sha256": "17de8bc88b6378c14125734402071028e11c1fe27cf08fc7fe827cb1e07d6f4f",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-701": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-701.txt",
+    "format": "txt",
+    "sha256": "e787f6d511ec4d94d8bd5c691da07f353462a827388fd1d34046cc69b94b1b7b",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-702": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-702.txt",
+    "format": "txt",
+    "sha256": "7a0e12a813bb7becfb40f62c781ae288bddc9dd8a6115c0aee547a9751d8e838",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
+  },
+  "EV-703": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-703.txt",
+    "format": "txt",
+    "sha256": "b0d3a489c752ceaa1c66aa58aaab2370227a6c04254e307c5bfea0481c1c8c7e",
+    "recorded": "2026-11-21",
+    "originalSha256": "584f95ac12deab9e73b8725f6cdfa28095241296f5f39099872238e07c689f4f",
+    "originalFormat": "html",
+    "originalBytes": 247767,
+    "retrieved": "2026-11-21T10:05:46.196Z",
+    "resolvedUrl": "https://www.opb.org/article/2022/11/01/joseph-dibee-earth-liberation-front-and-animal-liberation-front-environmental-terrorism-oregon-washington/"
+  },
+  "EV-704": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-704.txt",
+    "format": "txt",
+    "sha256": "ab9d7ef05aea41a4ce733847c8ad0b4698aed2707eebfceaf0d96162523ee698",
+    "recorded": "2026-11-21",
+    "captureNote": "Full source capture unavailable during this edition."
   }
 };
