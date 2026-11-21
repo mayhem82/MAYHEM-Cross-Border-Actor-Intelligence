@@ -587,5 +587,29 @@ window.preservation = {
     "originalBytes": 54649,
     "retrieved": "2026-11-20T20:25:26.193Z",
     "resolvedUrl": "https://newsroom.ucla.edu/condemning-violence-in-our-community"
+  },
+  "EV-500": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-500.txt",
+    "format": "txt",
+    "sha256": "65801a0a75251bac4318fb378aba095e017634e8aa3fce0d20d4eb71e58a9aea",
+    "recorded": "2026-11-21",
+    "originalSha256": "2b525fb2ea4fa6468c05fa5ce548494e436e3021756755bb5ea1f73521b77fc3",
+    "originalFormat": "html",
+    "originalBytes": 200497,
+    "retrieved": "2026-11-21T10:01:15.420Z",
+    "resolvedUrl": "https://www.hrw.org/news/2009/01/21/gaza-crisis-regimes-react-routine-repression"
+  },
+  "EV-501": {
+    "label": "Quotation and source metadata",
+    "path": "evidence/EV-501.txt",
+    "format": "txt",
+    "sha256": "41b8eb48d40cf03b7808c78e5b7f82355de42b3b52f1bc6645230d3d5dc3ae93",
+    "recorded": "2026-11-21",
+    "originalSha256": "17b971fb7dcf42d021c32e7e3b8074fa21a33b517d6ad932e030878dee291613",
+    "originalFormat": "pdf",
+    "originalBytes": 6697438,
+    "retrieved": "2026-11-21T10:01:18.935Z",
+    "resolvedUrl": "https://www.un.org/unispal/wp-content/uploads/2019/06/A.HRC_.40.CPR_.2.pdf"
   }
 };
