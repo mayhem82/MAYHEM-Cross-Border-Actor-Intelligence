@@ -5,12 +5,12 @@ import { runInNewContext } from 'node:vm';
 
 const docs = new URL('../docs/', import.meta.url);
 const context = { window: {} };
-for (const name of ['civic', 'cases', 'global', 'batch_a', 'preservation', 'translations']) {
+for (const name of ['civic', 'cases', 'global', 'batch_a', 'batch_b', 'preservation', 'translations']) {
   const file = new URL('data/' + name + '.js', docs);
   runInNewContext(readFileSync(file, 'utf8'), context, { filename: file.pathname });
 }
-const { civic, cases, globalRecords, batchA, preservation, translations } = context.window;
-const strands = [civic, cases, globalRecords, batchA];
+const { civic, cases, globalRecords, batchA, batchB, preservation, translations } = context.window;
+const strands = [civic, cases, globalRecords, batchA, batchB];
 const sources = new Map(strands.flatMap(strand => strand.sources).map(s => [s.id, s]));
 const seen = new Set();
 const sum = bytes => createHash('sha256').update(bytes).digest('hex');

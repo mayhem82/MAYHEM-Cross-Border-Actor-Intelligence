@@ -38,7 +38,7 @@ const navGroups = [['Investigation',['dashboard','network','atlas','timeline']],
 const categoryPages = {actors:'actors',organisations:'organisations',connections:'network',findings:'findings',events:'timeline',analyses:'analyses',questions:'questions',investigations:'investigations',judicial:'judicial',sources:'sources'};
 const data = {}, records = new Map();
 for(const key of Object.keys(categoryPages)){
- data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[]),...(window.batchA[key]||[])].map(entry => {
+ data[key]=[...(window.civic[key]||[]),...(window.cases[key]||[]),...(window.globalRecords[key]||[]),...(window.batchA[key]||[]),...(window.batchB[key]||[])].map(entry => {
   const row = {...entry};
   for (const [field, translated] of Object.entries(window.translations[entry.id] || {})) {
    if (row[field]) row[field] += ' [' + translated + ']';

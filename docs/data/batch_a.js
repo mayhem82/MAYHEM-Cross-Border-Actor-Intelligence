@@ -196,7 +196,8 @@ window.batchA = {
       ],
       "date": "2018-03-30",
       "sources": [
-        "EV-501"
+        "EV-501",
+        "EV-609"
       ],
       "notes": [
         {
@@ -216,7 +217,8 @@ window.batchA = {
       ],
       "date": "2018-05-14",
       "sources": [
-        "EV-501"
+        "EV-501",
+        "EV-610"
       ],
       "notes": [
         {
